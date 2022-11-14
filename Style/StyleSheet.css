@@ -32,13 +32,13 @@ footer
 {
     padding: 0px;
     border: 1px;
-    border-color: dimgray;
+    border-color: #333;
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
     margin: 0;
-    background-color: dimgray;
+    background-color: #333;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -54,11 +54,10 @@ nav a:visited
     color: white;
 }
 
-body 
-{
+body {
     position: absolute;
     top: 200px;
-    background-color: lightgray;
+    background-color: #848484;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -74,9 +73,15 @@ button
 
 table
 {
+
     text-align: center;
 }
 
+th
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
 .hidden
 {
     visibility: hidden;
