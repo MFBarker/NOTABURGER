@@ -77,8 +77,14 @@ table
     text-align: center;
 }
 
-th
+td
 {
+    font-size: 14px;
+}
+
+th 
+{
+    text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: inherit;
 }
