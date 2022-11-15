@@ -6,15 +6,32 @@
     <meta charset="utf-8" />
     <title>NOTABURGER | Menu</title>
     <link rel="stylesheet" href="Style/menuStyle.css">
+    <link rel="stylesheet" href="Style/StyleSheet.css" />
     <script src="Scripts/menu_JS.js" defer></script>
 </head>
 <body>
-    Menu:<br />
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <input type="image" src="Resources/Notaburger Logo_transparent_text.png" onclick="location.href = 'home.html';" width="110" padding="0px" margin="0px" />
+                    </li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="NOTASTORE.html">NOTASTORE</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li> <a href="menu.html"><button><img src="Resources/BagIcon.png" width="15" /> Start Ordering</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Burgers -->
     <div class="catName">Burgers</div>
 
-    <button id="TurkeyBurger" type="button" class="collapsible item">Turkey Burger</button>
+    <button id="TurkeyBurger" type="button" class="collapsible item" onclick="btnClick()()">Turkey Burger</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.49 (440 Cal) <br />
@@ -24,13 +41,13 @@
             <b>Includes:</b> Large Bun (5"), Large Turkey Patty (5") (1), Tomato (Regular),
             Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
         </p>
-        <button id="Customize" class="collapsible">Customize!</button>
+        <button id="Customize" class="collapsible" onclick="btnClick()">Customize!</button>
         <div class="content">
             customize (WIP)
         </div>
-        <button id="NutFacts" class="collapsible">Nutritional Facts</button>
+        <button id="NutFacts" class="collapsible" onclick="btnClick()">Nutritional Facts</button>
         <div class="content">
-            <b>Contains:</b> Soy, Wheat, Gluten
+            <b>Contains:</b> Soy, Wheat, Gluten <br />
 
             <span class="nutFacts"><b>Nutritional Facts:</b></span>
             <p class="shrinkText">
@@ -46,7 +63,7 @@
         </div>
     </div>
 
-    <button id="SalmonBurger" type="button" class="collapsible item">Salmon Burger</button>
+    <button id="SalmonBurger" type="button" class="collapsible item" onclick="btnClick()">Salmon Burger</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.79 (470 Cal) <br />
@@ -58,7 +75,7 @@
         </p>
     </div>
 
-    <button id="ImposBurger" type="button" class="collapsible item">Impossible Burger</button>
+    <button id="ImposBurger" type="button" class="collapsible item" onclick="btnClick()">Impossible Burger</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.89 (652 Cal) <br />
@@ -70,7 +87,7 @@
         </p>
     </div>
 
-    <button id="GrassBurger" type="button" class="collapsible item">Grass Burger</button>
+    <button id="GrassBurger" type="button" class="collapsible item" onclick="btnClick()">Grass Burger</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.49 (0 Cal) <br />
@@ -84,7 +101,7 @@
     <!-- Chicken -->
     <div class="catName">Chicken</div>
 
-    <button id="GrChSando" type="button" class="collapsible item">Grilled Chicken Sandwich</button>
+    <button id="GrChSando" type="button" class="collapsible item" onclick="btnClick()">Grilled Chicken Sandwich</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.89 (430 Cal) <br />
@@ -96,7 +113,7 @@
         </p>
     </div>
 
-    <button id="ChikSando" type="button" class="collapsible item">Chicken Sandwich</button>
+    <button id="ChikSando" type="button" class="collapsible item" onclick="btnClick()">Chicken Sandwich</button>
     <div class="content">
         <p id="Prices">
             <b>Sandwich Only:</b> $5.59 (540 Cal) <br />
