@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div class="sticky">
                 <ul>
                     <li>
                         <input type="image" src="Resources/Notaburger Logo_transparent_text.png" onclick="location.href = 'home.html';" width="110" padding="0px" margin="0px" />
@@ -27,119 +27,295 @@
             </div>
         </nav>
     </header>
+    <section>
+        <!-- Burgers -->
+        <div class="catName">Burgers</div>
 
-    <!-- Burgers -->
-    <div class="catName">Burgers</div>
-
-    <button id="TurkeyBurger" type="button" class="collapsible item">Turkey Burger</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.49 (440 Cal) <br />
-            <b>NotaMeal®:</b> $8.19 (1245 Cal)
-        </p>
-        <p>
-            <b>Includes:</b> Large Bun (5"), Large Turkey Patty (5") (1), Tomato (Regular),
-            Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
-        </p>
-        <button id="Customize" class="collapsible">Customize!</button>
+        <button id="TurkeyBurger" type="button" class="collapsible item">Turkey Burger</button>
         <div class="content">
-            customize (WIP)
-        </div>
-        <button id="NutFacts" class="collapsible">Nutritional Information</button>
-        <div class="content">
-            <b>Contains:</b> Soy, Wheat, Gluten <br />
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.49 (440 Cal) <br />
+                <b>NotaMeal®:</b> $8.19 (1245 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Large Bun (5"), Large Turkey Patty (5") (1), Tomato (Regular),
+                Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
+            </p>
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="content">
+                customize (WIP)
+            </div>
+            <button id="NutFacts" class="collapsible">Nutritional Information</button>
+            <div class="content">
+                <b>Contains:</b> Soy, Wheat, Gluten <br />
 
-            <b>Nutritional Facts:</b>
-            <div class="shrinkText">
-                <b>Sandwich Only:</b>
-                <table class="nutTable shrinkText">
-                    <tr> <td>Calories: 440</td>         <td>Calories from Fat: 89</td>  <td>Saturated Fat (g): 3</td> </tr>
-                    <tr> <td>Trans Fat (g): 0</td>      <td>Cholesterol (g): 45</td>    <td>Sodium (mg): 930</td> </tr>
-                    <tr> <td>Dietary Fiber (g): 0</td>  <td>Protein (g): 18</td>        <td>Sugars (g): 0</td> </tr>
-                </table>
+                <b>Nutritional Facts:</b>
+                <div class="shrinkText">
+                    <b>Sandwich Only:</b>
+                    <table class="nutTable shrinkText">
+                        <tr> <td>Calories: 440</td>         <td>Calories from Fat: 89</td>  <td>Saturated Fat (g): 3</td> </tr>
+                        <tr> <td>Trans Fat (g): 0</td>      <td>Cholesterol (g): 45</td>    <td>Sodium (mg): 930</td> </tr>
+                        <tr> <td>Dietary Fiber (g): 0</td>  <td>Protein (g): 18</td>        <td>Sugars (g): 0</td> </tr>
+                    </table>
 
-                <b>Meal:</b>
-                <table class="nutTable shrinkText">
-                    <tr> <td>Calories: 1245</td> <td>Calories from Fat: 267</td> <td>Saturated Fat (g): 6</td> </tr>
-                    <tr> <td>Trans Fat (g): 0</td> <td>Cholesterol (g): 50</td> <td>Sodium (mg): 1290</td> </tr>
-                    <tr> <td>Dietary Fiber (g): 5</td> <td>Protein (g): 18</td> <td>Sugars (g): 107</td> </tr>
-                </table>
-                <br />
+                    <b>Meal:</b>
+                    <table class="nutTable shrinkText">
+                        <tr> <td>Calories: 1245</td> <td>Calories from Fat: 267</td> <td>Saturated Fat (g): 6</td> </tr>
+                        <tr> <td>Trans Fat (g): 0</td> <td>Cholesterol (g): 50</td> <td>Sodium (mg): 1290</td> </tr>
+                        <tr> <td>Dietary Fiber (g): 5</td> <td>Protein (g): 18</td> <td>Sugars (g): 107</td> </tr>
+                    </table>
+                    <br />
+                </div>
             </div>
         </div>
-    </div>
 
-    <button id="SalmonBurger" type="button" class="collapsible item">Salmon Burger</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.79 (470 Cal) <br />
-            <b>NotaMeal®:</b> $8.49 (1275 Cal)
-        </p>
-        <p>
-            <b>Includes:</b> Large Bun (5"), Large Salmon Patty (5") (1), Tomato (Regular),
-            Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
-        </p>
-    </div>
+        <button id="SalmonBurger" type="button" class="collapsible item">Salmon Burger</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.79 (470 Cal) <br />
+                <b>NotaMeal®:</b> $8.49 (1275 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Large Bun (5"), Large Salmon Patty (5") (1), Tomato (Regular),
+                Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
+            </p>
+        </div>
 
-    <button id="ImposBurger" type="button" class="collapsible item">Impossible Burger</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.89 (652 Cal) <br />
-            <b>NotaMeal®:</b> $8.59 (1457 Cal)
-        </p>
-        <p>
-            <b>Includes:</b> Large Bun (5"), Large Impossible Patty (5") (1), Tomato (Regular),
-            Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
-        </p>
-    </div>
+        <button id="ImposBurger" type="button" class="collapsible item">Impossible Burger</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.89 (652 Cal) <br />
+                <b>NotaMeal®:</b> $8.59 (1457 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Large Bun (5"), Large Impossible Patty (5") (1), Tomato (Regular),
+                Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
+            </p>
+        </div>
 
-    <button id="GrassBurger" type="button" class="collapsible item">Grass Burger</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.49 (0 Cal) <br />
-            <b>NotaMeal®:</b> $8.19 (805 Cal)
-        </p>
-        <p>
-            <b>Includes:</b> Grass
-        </p>
-    </div>
+        <button id="GrassBurger" type="button" class="collapsible item">Grass Burger</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.49 (0 Cal) <br />
+                <b>NotaMeal®:</b> $8.19 (805 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Grass
+            </p>
+        </div>
 
-    <!-- Chicken -->
-    <div class="catName">Chicken</div>
+        <!-- Chicken -->
+        <div class="catName">Chicken</div>
 
-    <button id="GrChSando" type="button" class="collapsible item">Grilled Chicken Sandwich</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.89 (430 Cal) <br />
-            <b>NotaMeal®:</b> $8.49 (1235 Cal)
-        </p>
-        <p>
-            <b>Includes:</b>Brioche Bun (4"), Grilled Chicken Filet (1), Tomato (Regular),
-            Leaf Lettuce (Regular), NotaSauce® (Regular)
-        </p>
-    </div>
+        <button id="GrChSando" type="button" class="collapsible item">Grilled Chicken Sandwich</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.89 (430 Cal) <br />
+                <b>NotaMeal®:</b> $8.49 (1235 Cal)
+            </p>
+            <p>
+                <b>Includes:</b>Brioche Bun (4"), Grilled Chicken Filet (1), Tomato (Regular),
+                Leaf Lettuce (Regular), NotaSauce® (Regular)
+            </p>
+        </div>
 
-    <button id="ChikSando" type="button" class="collapsible item">Chicken Sandwich</button>
-    <div class="content">
-        <p id="Prices">
-            <b>Sandwich Only:</b> $5.59 (540 Cal) <br />
-            <b>NotaMeal®:</b> $8.19 (1345 Cal)
-        </p>
-        <p>
-            <b>Includes:</b>Brioche Bun (4"), Chicken Filet (1), Tomato (Regular),
-            Leaf Lettuce (Regular), NotaSauce® (Regular)
-        </p>
-    </div>
+        <button id="ChikSando" type="button" class="collapsible item">Chicken Sandwich</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Sandwich Only:</b> $5.59 (540 Cal) <br />
+                <b>NotaMeal®:</b> $8.19 (1345 Cal)
+            </p>
+            <p>
+                <b>Includes:</b>Brioche Bun (4"), Chicken Filet (1), Tomato (Regular),
+                Leaf Lettuce (Regular), NotaSauce® (Regular)
+            </p>
+        </div>
 
-    <!-- Sides -->
-    <div class="catName">Sides</div>
+        <button id="ChknTenders" type="button" class="collapsible item">Chicken Tenders</button>
+        <div class="content">
+            <p id="Prices">
+                <b>Tenders Only:</b> $5.59 (550 Cal) <br />
+                <b>NotaMeal®:</b> $7.99 (1470 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> 3 pcs. Chicken Tenders, Choice of Dipping Sauce
+            </p>
+        </div>
 
-    <!-- Breakfast -->
-    <div class="catName">Breakfast</div>
+        <!-- Sides -->
+        <div class="catName">Sides</div>
 
-    <!-- Drinks and Shakes -->
-    <div class="catName">Drinks and Shakes</div>
+        <button id="Fries" type="button" class="collapsible item">Fries</button>
+        <div class="content">
+            <p id="Prices">
+                $2.69 (420 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Fries
+            </p>
+        </div>
 
+        <button id="OnionRings" type="button" class="collapsible item">Onion Ringd</button>
+        <div class="content">
+            <p id="Prices">
+                $2.89 (300 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Onion Rings
+            </p>
+        </div>
 
+        <button id="AppleSlices" type="button" class="collapsible item">Apple Slices</button>
+        <div class="content">
+            <p id="Prices">
+                $1.69 (30 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Apple Slices
+            </p>
+        </div>
+
+        <!-- Breakfast -->
+        <div class="catName">Breakfast</div>
+        <button id="Pancakes" type="button" class="collapsible item">Pancakes</button>
+        <div class="content">
+            <p id="Prices">
+                $3.19 (630 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> 3 pcs Pancakes
+            </p>
+        </div>
+
+        <button id="Hashbrowns" type="button" class="collapsible item">HashBrowns</button>
+        <div class="content">
+            <p id="Prices">
+                $3.19 (630 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> 3 pcs Pancakes
+            </p>
+        </div>
+
+        <button id="Biscuit" type="button" class="collapsible item">Biscuit</button>
+        <div class="content">
+            <p id="Prices">
+                $1.29 (290 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> 1 Buttermilk Biscuit
+            </p>
+        </div>
+
+        <button id="SausageBiscuit" type="button" class="collapsible item">Sausage Biscuit</button>
+        <div class="content">
+            <p id="Prices">
+                $2.19 (520 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Buttermilk Biscuit, Choice of Sausage
+            </p>
+        </div>
+
+        <button id="BaconBiscuit" type="button" class="collapsible item">Bacon Biscuit</button>
+        <div class="content">
+            <p id="Prices">
+                $2.19 (355 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Buttermilk Biscuit, Choice of Bacon
+            </p>
+        </div>
+
+        <button id="E&CBiscuit" type="button" class="collapsible item">Egg and Cheese Biscuit</button>
+        <div class="content">
+            <p id="Prices">
+                $2.39 (425 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Buttermilk Biscuit, Egg, Cheese
+            </p>
+        </div>
+
+        <button id="BiscuitSando" type="button" class="collapsible item">Biscuit Sandwich</button>
+        <div class="content">
+            <p id="Prices">
+                $3.89 (3.89 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Buttermilk Biscuit Egg, American Cheese, Choice of Sausage or Bacon
+            </p>
+        </div>
+
+        <button id="PnCkPlatter" type="button" class="collapsible item">Pancake Platter</button>
+        <div class="content">
+            <p id="Prices">
+                $3.99 (945 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Pancakes, Choice of Bacon
+            </p>
+        </div>
+
+        <button id="BkfstPlatter" type="button" class="collapsible item">Breakfast Platter</button>
+        <div class="content">
+            <p id="Prices">
+                $4.39 (615 Cal)
+            </p>
+            <p>
+                <b>Includes:</b> Buttermilk Biscuit, Scrambled Eggs, Choice of Bacon or Sausage
+            </p>
+        </div>
+
+        <!-- Drinks and Shakes -->
+        <div class="catName">Drinks and Shakes</div>
+
+        <button id="SoftDrink" type="button" class="collapsible item">Soft Drink</button>
+        <div class="content">
+            <p id="Prices">
+                Kids (16 oz): $1.69 (0-220 Cal)
+                Small (20 oz): $2.19 (0-280 Cal)
+                Medium (32 oz): $2.49 (0-440 Cal)
+                Large (44 oz): $2.79 (0-610 Cal)
+            </p>
+        </div>
+
+        <button id="Coffee" type="button" class="collapsible item">Coffee</button>
+        <div class="content">
+            <p id="Prices">
+                Small (12 oz): $1.59 (5 Cal)
+                Medium (16 oz): $1.89 (0 Cal)
+                Large (20 oz): $2.19 (0 Cal)
+            </p>
+        </div>
+
+        <button id="Tea" type="button" class="collapsible item">Tea</button>
+        <div class="content">
+            <p id="Prices">
+                Kids (16 oz): $1.69 (0-220 Cal)
+                Small (20 oz): $2.19 (0-280 Cal)
+                Medium (32 oz): $2.49 (10-440 Cal)
+                Large (44 oz): $2.79 (15-610 Cal)
+
+            </p>
+        </div>
+
+        <button id="Shakes" type="button" class="collapsible item">Shakes</button>
+        <div class="content">
+            <p id="Prices">
+                Small (16 oz): $2.99 (400-430 Cal)
+                Medium (20 oz) $3.49 (500-550 Cal)
+                Large (32 oz): $4.19 (800-870 Cal)
+            </p>
+        </div>
+
+    </section>
+    <footer class="foot">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </footer>
 </body>
 </html>
