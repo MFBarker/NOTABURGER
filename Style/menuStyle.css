@@ -32,9 +32,10 @@ button
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    color:black;
+    color: black;
     border-radius: 30px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
+    font-family: "Comic Sans MS", sans-serif, serif;
 }
 .collapsible:after 
 {
