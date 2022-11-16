@@ -15,7 +15,7 @@ header {
     margin: 0;
     background-color: blue;
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'whatafont_expandedexpanded';
 }
 
 .topMenu 
@@ -49,7 +49,7 @@ footer {
     margin: 0;
     background-color: #333;
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'whatafont_expandedexpanded';
 }
 
 nav a:link 
@@ -68,7 +68,7 @@ body {
     top: 200px;
     background-color: #848484;
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'whatafont_expandedexpanded';
 }
 
 button {
@@ -77,14 +77,13 @@ button {
     color: white;
     border-radius: 10px;
     font-size: 18px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'whatafont_expandedexpanded';
 }
 
-.table 
-{
+.table {
     text-align: left;
     margin-left: 100px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'whatafont_expandedexpanded';
     padding: 36px 0 32px;
 }
 
