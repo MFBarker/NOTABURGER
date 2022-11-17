@@ -36,6 +36,7 @@ button
     border-radius: 30px;
     margin-bottom: 5px;
     font-family: "Comic Sans MS", sans-serif, serif;
+    width: max-content;
 }
 .collapsible:after 
 {
