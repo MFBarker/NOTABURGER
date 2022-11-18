@@ -1,5 +1,4 @@
-﻿html
-{
+﻿html {
     padding: 0px;
     margin: 0px;
 }
@@ -18,8 +17,7 @@ header {
     font-family: 'whatafont_expandedexpanded';
 }
 
-.topMenu 
-{
+.topMenu {
     width: 12%;
     text-align: center;
     padding: 0px;
@@ -28,8 +26,7 @@ header {
     text-transform: uppercase;
 }
 
-.bottomMenu 
-{
+.bottomMenu {
     width: 12%;
     text-align: center;
     padding: 0px;
@@ -52,14 +49,12 @@ footer {
     font-family: 'whatafont_expandedexpanded';
 }
 
-nav a:link 
-{
+nav a:link {
     color: white;
     text-decoration: none;
 }
 
-nav a:visited
-{
+nav a:visited {
     color: white;
 }
 
@@ -87,23 +82,55 @@ button {
     padding: 36px 0 32px;
 }
 
-td
-{
+td {
     font-size: 14px;
 }
 
-th 
-{
+th {
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: inherit;
 }
-.hidden
-{
+
+.hidden {
     visibility: hidden;
 }
 
-span 
-{
+span {
     margin-left: 500px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid blue;
+    background-color: blue;
+    text-align: center;
+    display: inline-block;
+}
+
+    .tab button {
+        background-color: inherit;
+        border: none;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        padding: 6px 12px;
+        transition: 0.3s;
+        font-size: 17px;
+        line-height: 3em;
+        text-align: left;
+
+    }
+
+        .tab button.active {
+            background-color: cornflowerblue;
+        }
+
+.tabcontent {
+    display: none;
+    text-align:center;
+    padding: 6px 12px;
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    border-top: none;
 }
