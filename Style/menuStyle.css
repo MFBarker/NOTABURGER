@@ -35,7 +35,7 @@ button
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.itemInfo {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -85,19 +85,6 @@ td {
     padding: 0 15px 0 0;
 }
 
-.foot {
-    padding: 0px;
-    border: 1px;
-    border-color: #333;
-    position: static;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #333;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-}
-
 .sticky {
     position: sticky;
     top: 0;
@@ -131,4 +118,8 @@ td {
     font-style: normal;
     font-weight: 700;
     background: transparent;
+}
+
+.spacer {
+    margin-top:200px;
 }
