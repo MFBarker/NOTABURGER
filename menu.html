@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <div class="sticky">
+            <div>
                 <ul>
                     <li class="topMenu">
                         <input type="image" src="Resources/Notaburger Logo_transparent_text.png" onclick="location.href = 'home.html';" width="110" padding="0px" margin="0px" />
@@ -28,11 +28,12 @@
         </nav>
     </header>
     <section>
+        <div class="spacer"></div>
         <!-- Burgers -->
         <div class="catName">Burgers</div>
 
         <button id="TurkeyBurger" type="button" class="collapsible item">Turkey Burger</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.49 (440 Cal) <br />
                 <b>NotaMeal®:</b> $8.19 (1245 Cal)
@@ -42,7 +43,7 @@
                 Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
             </p>
             <button id="Customize" class="collapsible">Customize!</button>
-            <div class="content">
+            <div class="itemInfo">
                 <!-- Bread -->
                 <div><b>Bread</b></div>
                 <table>
@@ -88,8 +89,8 @@
                             <label for="American Cheese">American Cheese</label>
 
                             <!--<input type="image" src="Resources/btnMinus.png" id="minus" onclick="down();" width="25" padding="0px" margin="0px" />
-                            <input  id ="numDisplay "tabindex="0" label="quantity" type="text" readonly="readonly" class="numDisplay" min="0" max="7" value="1"/>
-                            <input type="image" src="Resources/btnPlus.png" id="plus" onclick="up();" width="25" padding="0px" margin="0px" />-->
+                        <input  id ="numDisplay "tabindex="0" label="quantity" type="text" readonly="readonly" class="numDisplay" min="0" max="7" value="1"/>
+                        <input type="image" src="Resources/btnPlus.png" id="plus" onclick="up();" width="25" padding="0px" margin="0px" />-->
                         </td>
                         <td>
                             <input type="checkbox" name="cheese" value="Monterary Jack Cheese" />
@@ -120,7 +121,7 @@
 
                     </tr>
                 </table>
-                
+
                 <!-- Toppings -->
                 <div><b>Toppings</b></div>
                 <table>
@@ -128,27 +129,27 @@
                         <td>
                             <input type="checkbox" name="toppings" value="Tomato" />
                             <label for="Tomato">Tomato</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="toppings" value="Lettuce" />
                             <label for="Lettuce">Lettuce</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="toppings" value="Pickles" />
                             <label for="Pickles">Pickles</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="toppings" value="Diced Onions" />
                             <label for="Diced Onions">Diced Onions</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="toppings" value="Grilled Onions" />
                             <label for="Grilled Onions">Grilled Onions</label>
-                            
+
                         </td>
                     </tr>
                 </table>
@@ -159,29 +160,29 @@
                         <td>
                             <input type="checkbox" name="sauces" value="Mustard" />
                             <label for="Mustard">Mustard</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="sauces" value="Mayonnaise" />
                             <label for="Mayonnaise">Mayonnaise</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="sauces" value="Ketchup" />
                             <label for="Ketchup">Ketchup</label>
-                            
+
                         </td>
                         <td>
                             <input type="checkbox" name="sauces" value="Honey BBQ" />
                             <label for="Honey BBQ">Honey BBQ</label>
-                            
+
                         </td>
                     </tr>
                 </table>
                 <br />
             </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
-            <div class="content">
+            <div class="itemInfo">
                 <b>Contains:</b> Soy, Wheat, Gluten <br />
 
                 <b>Nutritional Facts:</b>
@@ -205,7 +206,7 @@
         </div>
 
         <button id="SalmonBurger" type="button" class="collapsible item">Salmon Burger</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.79 (470 Cal) <br />
                 <b>NotaMeal®:</b> $8.49 (1275 Cal)
@@ -217,7 +218,7 @@
         </div>
 
         <button id="ImposBurger" type="button" class="collapsible item">Impossible Burger</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.89 (652 Cal) <br />
                 <b>NotaMeal®:</b> $8.59 (1457 Cal)
@@ -229,7 +230,7 @@
         </div>
 
         <button id="GrassBurger" type="button" class="collapsible item">Grass Burger</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.49 (0 Cal) <br />
                 <b>NotaMeal®:</b> $8.19 (805 Cal)
@@ -243,7 +244,7 @@
         <div class="catName">Chicken</div>
 
         <button id="GrChSando" type="button" class="collapsible item">Grilled Chicken Sandwich</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.89 (430 Cal) <br />
                 <b>NotaMeal®:</b> $8.49 (1235 Cal)
@@ -255,7 +256,7 @@
         </div>
 
         <button id="ChikSando" type="button" class="collapsible item">Chicken Sandwich</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Sandwich Only:</b> $5.59 (540 Cal) <br />
                 <b>NotaMeal®:</b> $8.19 (1345 Cal)
@@ -267,7 +268,7 @@
         </div>
 
         <button id="ChknTenders" type="button" class="collapsible item">Chicken Tenders</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <b>Tenders Only:</b> $5.59 (550 Cal) <br />
                 <b>NotaMeal®:</b> $7.99 (1470 Cal)
@@ -281,7 +282,7 @@
         <div class="catName">Sides</div>
 
         <button id="Fries" type="button" class="collapsible item">Fries</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
@@ -296,7 +297,7 @@
         </div>
 
         <button id="OnionRings" type="button" class="collapsible item">Onion Ringd</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
@@ -310,7 +311,7 @@
         </div>
 
         <button id="AppleSlices" type="button" class="collapsible item">Apple Slices</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $1.69 (30 Cal)
             </p>
@@ -322,7 +323,7 @@
         <!-- Breakfast -->
         <div class="catName">Breakfast</div>
         <button id="Pancakes" type="button" class="collapsible item">Pancakes</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $3.19 (630 Cal)
             </p>
@@ -332,7 +333,7 @@
         </div>
 
         <button id="Hashbrowns" type="button" class="collapsible item">HashBrowns</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $3.19 (630 Cal)
             </p>
@@ -342,7 +343,7 @@
         </div>
 
         <button id="Biscuit" type="button" class="collapsible item">Biscuit</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $1.29 (290 Cal)
             </p>
@@ -352,7 +353,7 @@
         </div>
 
         <button id="SausageBiscuit" type="button" class="collapsible item">Sausage Biscuit</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $2.19 (520 Cal)
             </p>
@@ -362,7 +363,7 @@
         </div>
 
         <button id="BaconBiscuit" type="button" class="collapsible item">Bacon Biscuit</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $2.19 (355 Cal)
             </p>
@@ -372,7 +373,7 @@
         </div>
 
         <button id="E&CBiscuit" type="button" class="collapsible item">Egg and Cheese Biscuit</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $2.39 (425 Cal)
             </p>
@@ -382,7 +383,7 @@
         </div>
 
         <button id="BiscuitSando" type="button" class="collapsible item">Biscuit Sandwich</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $3.89 (3.89 Cal)
             </p>
@@ -392,7 +393,7 @@
         </div>
 
         <button id="PnCkPlatter" type="button" class="collapsible item">Pancake Platter</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $3.99 (945 Cal)
             </p>
@@ -402,7 +403,7 @@
         </div>
 
         <button id="BkfstPlatter" type="button" class="collapsible item">Breakfast Platter</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 $4.39 (615 Cal)
             </p>
@@ -415,7 +416,7 @@
         <div class="catName">Drinks and Shakes</div>
 
         <button id="SoftDrink" type="button" class="collapsible item">Soft Drink</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td></tr>
@@ -428,7 +429,7 @@
         </div>
 
         <button id="Coffee" type="button" class="collapsible item">Coffee</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
@@ -440,7 +441,7 @@
         </div>
 
         <button id="Tea" type="button" class="collapsible item">Tea</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
@@ -453,7 +454,7 @@
         </div>
 
         <button id="Shakes" type="button" class="collapsible item">Shakes</button>
-        <div class="content">
+        <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
@@ -463,14 +464,32 @@
                 </table>
             </p>
         </div>
+        <div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
 
     </section>
-    <footer class="foot">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    <footer padding-top:"10px">
+        <nav>
+            
+            <div>
+                <br />
+                <ul>
+                    <li class="bottomMenu"><a href="">Contact Us</a></li>
+                    <li class="bottomMenu"><a href="">Nutritional Information</a></li>
+                    <li class="bottomMenu"><a href="">Terms & Conditions</a></li>
+                    <li class="bottomMenu"><a href="">Accessibility Statement</a></li>
+                </ul>
+                <span><img src="Resources/Notaburger Logo_transparent.png" width="60" /></span>
+                <br />
+                <br />
+            </div>
+        </nav>
     </footer>
 </body>
 </html>
