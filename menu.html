@@ -43,84 +43,139 @@
             </p>
             <button id="Customize" class="collapsible">Customize!</button>
             <div class="content">
-                <p id="Bread">
-                    <div><b>Bread</b></div>
-                    <table>
-                        <tr>
-                            <td>
-                                <input type="radio" name="bread" value="Large Bun">
-                                <label for="Large Bun">Large Bun</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="bread" value="Small Bun">
-                                <label for="Small Bun">Small Bun</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="bread" value="Brioche Bun">
-                                <label for="Brioche Bun">Brioche Bun</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="bread" value="Texas Toast">
-                                <label for="Texas Toast">Texas Toast</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="bread" value="No Bun">
-                                <label for="No Bun">No Bun</label>
-                            </td>
-                        </tr>
-                    </table>
-                </p>
-                <p id="ExtraPatty">
-                    <div><b>Extra Patty</b></div>
-                    <table>
-                        <tr>
-                            <td>Large Turkey Patty</td>
-                        </tr>
-                    </table>
-                </p>
-                <p id="Cheese">
-                    <div><b>Cheese</b></div>
-                    <table>
-                        <tr>
-                            <td>American Cheese</td>
-                            <td>Monterary Jack Cheese</td>
-                        </tr>
-                    </table>
-                </p>
-                <p id="Add-Ons">
-                    <div><b>Popular Add-Ons</b></div>
-                    <table>
-                        <tr>
-                            <td>Bacon Slices</td>
-                            <td>Jalapenos</td>
-                            <td>Avocado</td>
-                            <td>Green Chiles</td>
-                        </tr>
-                    </table>
-                </p>
-                <p id="Toppings">
-                    <div><b>Toppings</b></div>
-                    <table>
-                        <tr>
-                            <td>Tomato</td>
-                            <td>Lettuce</td>
-                            <td>Pickles</td>
-                            <td>Diced Onions</td>
-                            <td>Grilled Onions</td>
-                        </tr>
-                    </table>
-                </p>
-                <p id="Sauces">
-                    <div><b>Sauces</b></div>
-                    <table>
-                        <tr>
-                            <td>Mustard</td>
-                            <td>Mayonnaise</td>
-                            <td>Ketchup</td>
-                            <td>Honey BBQ</td>
-                        </tr>
-                    </table>
-                </p>
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="bread" value="Large Bun">
+                            <label for="Large Bun">Large Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>Large Turkey Patty</td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="cheese" value="American Cheese" />
+                            <label for="American Cheese">American Cheese</label>
+
+                            <button id="minus" class="amount"><img src="Resources/btnMinus.png" width="15" /></button>
+                            <textarea id="numDisplay" class="numDisplay" readonly>1</textarea>
+                            <button id="plus" class="amount"><img src="Resources/btnPlus.png" width="15" /></button>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="cheese" value="Monterary Jack Cheese" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Bacon Slices" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Jalapenos" />
+                            <label for="Jalapenos">Jalapenos</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Avocado" />
+                            <label for="Avocado">Avocado</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Green Chiles" />
+                            <label for="Green Chiles">Green Chiles</label>
+                        </td>
+
+                    </tr>
+                </table>
+                
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Tomato" />
+                            <label for="Tomato">Tomato</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Lettuce" />
+                            <label for="Lettuce">Lettuce</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Pickles" />
+                            <label for="Pickles">Pickles</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Diced Onions" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="toppings" value="Grilled Onions" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sauces" value="Mustard" />
+                            <label for="Mustard">Mustard</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="sauces" value="Mayonnaise" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="sauces" value="Ketchup" />
+                            <label for="Ketchup">Ketchup</label>
+                            
+                        </td>
+                        <td>
+                            <input type="checkbox" name="sauces" value="Honey BBQ" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <br />
             </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="content">

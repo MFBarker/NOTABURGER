@@ -18,11 +18,20 @@ button
     outline: none;
     font-size: 15px;
 }
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover
 {
     background-color: #ccc;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -38,14 +47,7 @@ button
     font-family: "Comic Sans MS", sans-serif, serif;
     width: max-content;
 }
-.collapsible:after 
-{
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
+
 
 .active:after 
 {
@@ -101,4 +103,28 @@ td {
 .sticky {
     position: sticky;
     top: 0;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.amount {
+    cursor: pointer;
+    padding: 18px;
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+.active, .amount:hover {
+    background-color: #ccc;
+}
+
+.numDisplay {
+    text-align: center;
+    width: 20px;
+    height: 20px;
 }

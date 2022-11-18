@@ -16,3 +16,33 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 } 
+
+
+// item int display selection
+var minus = document.getElementById("minus");
+var plus = document.getElementById("plus");
+
+
+if (num_display = 1) { minus.disabled = true; }
+else if (num_display = 8) { plus.disabled = true; }
+else if (num_display > 1 && num_display < 8) { minus.disabled = false; plus.disabled = false; }
+
+function up(num_display) {
+    if (num_display == "1") { num_display = "2" };
+    if (num_display == "2") { num_display = "3" };
+    if (num_display == "3") { num_display = "4" };
+    if (num_display == "4") { num_display = "5" };
+    if (num_display == "5") { num_display = "6" };
+    if (num_display == "6") { num_display = "7" };
+    if (num_display == "7") { num_display = "8" };
+}
+
+function down() {
+    if (num_display.value == "8") { num_display.value = "7" };
+    if (num_display.value == "7") { num_display.value = "6" };
+    if (num_display.value == "6") { num_display.value = "5" };
+    if (num_display.value == "5") { num_display.value = "4" };
+    if (num_display.value == "4") { num_display.value = "3" };
+    if (num_display.value == "3") { num_display.value = "2" };
+    if (num_display.value == "2") { num_display.value = "1" };
+}
