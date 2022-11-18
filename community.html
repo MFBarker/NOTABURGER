@@ -2,11 +2,46 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" href="StyleSheet.css" />
     <meta charset="utf-8" />
     <title>NOTABURGER | Community</title>
+    <link rel="stylesheet" href="Style/StyleSheet.css">
+    <script src="Scripts/menu_JS.js" defer></script>
 </head>
+
+<header>
+    <nav>
+        <div>
+            <ul>
+                <li class="topMenu"><img src="Resources/Notaburger Logo_transparent_text.png" width="110" padding="0px" margin="0px" /></li>
+                <li class="topMenu"><a href="menu.html"><strong>Menu</strong></a></li>
+                <li class="topMenu"><a href="careers.html"><strong>Careers</strong></a></li>
+                <li class="topMenu"><a href="NOTASTORE.html"><strong>NOTASTORE</strong></a></li>
+                <li class="topMenu"><a href="stories.html"><strong>Stories</strong></a></li>
+                <li class="topMenu"><a href="community.html"><strong>Community</strong></a></li>
+                <li class="topMenu"> <a href="menu.html"><button><img src="Resources/BagIcon.png" width="15" /><strong>Start Ordering</strong></button></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 <body>
+    <section>
+        <div class="tab">
+            
+                <button class="tablinks" onclick="Programs(event, 'Dining')" id="defaultOpen">Dining Programs</button>
+                <button class="tablinks" onclick="Programs(event, 'Missing')" id="defaultOpen">Missing Programs</button>
+            
+        </div>
+    </section>
+
+    <div id="Dining" class="tabcontent">
+        <h2>Dining Program</h2>
+        <p>
+            <img src="Resources/DiningProgramPage.png"/>
+
+            
+        </p>
+    </div>
 
 </body>
 </html>

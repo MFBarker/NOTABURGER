@@ -19,30 +19,60 @@ for (i = 0; i < coll.length; i++) {
 
 
 // item int display selection
+var count = 1;
+
 var minus = document.getElementById("minus");
 var plus = document.getElementById("plus");
+var num_display = document.getElementById("numDisplay").ariaValueText;
 
 
-if (num_display = 1) { minus.disabled = true; }
-else if (num_display = 8) { plus.disabled = true; }
+if (num_display == 1) { minus.disabled = true; }
+else if (num_display == 8) { plus.disabled = true; }
 else if (num_display > 1 && num_display < 8) { minus.disabled = false; plus.disabled = false; }
 
-function up(num_display) {
-    if (num_display == "1") { num_display = "2" };
-    if (num_display == "2") { num_display = "3" };
-    if (num_display == "3") { num_display = "4" };
-    if (num_display == "4") { num_display = "5" };
-    if (num_display == "5") { num_display = "6" };
-    if (num_display == "6") { num_display = "7" };
-    if (num_display == "7") { num_display = "8" };
+
+
+function up() {
+    if (num_display == 1) { count = 2; }
+    else if (num_display == 2) { count = 3; }
+    else if (num_display == 3) { count = 4; }
+    else if (num_display == 4) { count = 5; }
+    else if (num_display == 5) { count = 6; }
+    else if (num_display == 6) { count = 7; }
+    else if (num_display == 7) { count = 8; plus.ariaDisabled = true; }
+
+    //debug only
+    console.log(num_display + " (up)");
+    num_display.ariaValueText = count;
 }
 
 function down() {
-    if (num_display.value == "8") { num_display.value = "7" };
-    if (num_display.value == "7") { num_display.value = "6" };
-    if (num_display.value == "6") { num_display.value = "5" };
-    if (num_display.value == "5") { num_display.value = "4" };
-    if (num_display.value == "4") { num_display.value = "3" };
-    if (num_display.value == "3") { num_display.value = "2" };
-    if (num_display.value == "2") { num_display.value = "1" };
+    if (num_display == 8) { count = 7; }
+    else if (num_display == 7) { count = 6; }
+    else if (num_display == 6) { count = 5; }
+    else if (num_display == 5) { count = 4; }
+    else if (num_display == 4) { count = 3; }
+    else if (num_display == 3) { count = 2; }
+    else if (num_display == 2) { count = 1; minus.ariaDisabled = true; }
+
+    //debug only
+    console.log(num_display + " (down)")
 }
+
+
+function Programs(evt, programName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(programName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

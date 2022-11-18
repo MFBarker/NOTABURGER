@@ -93,11 +93,9 @@ td {
     left: 0;
     bottom: 0;
     right: 0;
-    margin: 0 0 0 0;
     background-color: #333;
     color: white;
     font-family: "Times New Roman", Times, serif;
-    min-width: 100vw;
 }
 
 .sticky {
@@ -112,19 +110,25 @@ td {
 
 .amount {
     cursor: pointer;
-    padding: 18px;
-    width: 5px;
-    height: 5px;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    border-radius: 0px;
 }
 .active, .amount:hover {
     background-color: #ccc;
 }
 
 .numDisplay {
+    height: 26px;
+    width: 32px;
+    font-size: 1.5rem;
+    padding: 2px;
+    border: 0;
     text-align: center;
-    width: 20px;
-    height: 20px;
+    box-shadow: none;
+    margin-top: 1px;
+    font-family: azo-sans-web,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background: transparent;
 }
