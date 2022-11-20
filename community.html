@@ -12,7 +12,7 @@
     <nav>
         <div>
             <ul>
-                <li class="topMenu"><img src="Resources/Notaburger Logo_transparent_text.png" width="110" padding="0px" margin="0px" /></li>
+                <input type="image" src="Resources/Notaburger Logo_transparent_text.png" onclick="location.href = 'home.html';" width="110" padding="0px" margin="0px" />
                 <li class="topMenu"><a href="menu.html"><strong>Menu</strong></a></li>
                 <li class="topMenu"><a href="careers.html"><strong>Careers</strong></a></li>
                 <li class="topMenu"><a href="NOTASTORE.html"><strong>NOTASTORE</strong></a></li>
@@ -26,26 +26,173 @@
 
 <body>
     <section>
+        <div class="space"></div>
         <div class="tab">
-            
-                <button class="tablinks" onclick="Programs(event, 'Dining')" id="defaultOpen">Dining Programs</button>
-                <button class="tablinks" onclick="Programs(event, 'Missing')" id="defaultOpen">Missing Programs</button>
-            
+
+            <button class="tablinks active" onclick="Programs(event, 'Dining')" id="defaultOpen">Dining Programs</button>
+            <button class="tablinks" onclick="Programs(event, 'Missing')" id="defaultOpen">Missing Programs</button>
+
         </div>
     </section>
 
     <div id="Dining" class="tabcontent">
-        <p>
-            <img src="Resources/DiningProgramPage.png"/>
-            <h2> Get them full and ready!</h2>
+        <section>
+            <img class="img_" src="Resources/DiningProgramPage.png" />
+            <h1>  ========================= Get them full and ready! ========================= </h1>
             <h4>
-                Uwuw
-            </h4> 
+                We are here for all of our communities, that includes giving to our schools or local teams. For coaches and educators we're here
+                to feed everyone and keep them strong and ready to come back home with glory. The NotABurger Dining Program is a handy program to
+                feed groups fast and eliminating the need to pay with cash while getting good savings.
+            </h4>
+        </section>
+        <!-- REASONS -->
+        <section>
+            <h1>  ========================= Why Sign Up? ========================= </h1>
+            <ul class="bigdot">
+                <li>
+                    <h2><strong>No Cash!</strong></h2>
+                    <h4> No need to pay with cash,when ordering all you need is credit card or invoice. </h4>
 
+                </li>
 
-            
-        </p>
+                <li>
+                    <h2><strong>Low Prices!</strong></h2>
+                    <h4> You won't have to pay full price for all our items! Order minimum up to 100 people to make sure everyone is full and ready to go!</h4>
+                </li>
+                <li>
+                    <h2><strong>No Wait!</strong></h2>
+                    <h4>
+                        We understand if your group is on a rush to go and win that championship, so call us! We will be prepared with a simple call letting us know what time,
+                        location and group size!
+                    </h4>
+                </li>
+            </ul>
+        </section>
+
+        <!-- HOW TO SIGN -->
+        <section>
+            <h1>  ========================= How To Join ========================= </h1>
+            <h4>
+                It is simple! Apply by going to your nearest NotABurger and asking for the application, fill it out and return it to us.
+                You will then access to an account to do both pickups, deliveries or in person orders for your orginization!
+            </h4>
+        </section>
+        <section> Offer valid at participating locations only. Minimum of 100 orders. Limited substitutions available. No addons. Offer not valid with any other offer.</section>
+
     </div>
 
+    <!-- MISSING PROGRAM -->
+    <div id="Missing" class="tabcontent">
+        <section>
+            <img class="img_" src="Resources/Missing.jpg" />
+            <h1>  ========================= Your Help Is Needed! ========================= </h1>
+            <h2>
+                NotABurger is here to help along the National Missing and Unidentified Persons (NamUS) to recover people and stop communities and families to stop suffering.
+                More than 600,000 people go missing each year, from kidnappings to accidents, approximately 4,400 bodies are recovered each year.
+                Don't allow people or communities to be part of this statistics, make a change by keeping an eye out! If you see something, say something!
+            </h2>
+        </section>
+    </div>
+
+
 </body>
+<!-- FOOTER -->
+<footer class="footer_">
+    <nav>
+        <div>
+            <table class="table">
+                <tr>
+                    <th><a href="stories.html">Company</a></th>
+                    <th colspan="2"><a href="NOTASTORE.html">Shop NOTASTORE</a></th>
+                    <th><a href="Menu.html">ORDERING & REWARDS</a></th>
+                    <th><a href="">Connect</a></th>
+                </tr>
+                <tr class="hidden">
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                </tr>
+                <tr>
+                    <td><a href="">Our History</a></td>
+                    <td><a href="">Apparel</a></td>
+                    <td><a href="">Buy Gift Card</a></td>
+                    <td><a href="">MyNotaburger Benefits</a></td>
+                    <td><a href="">Contact Customer Care</a></td>
+                </tr>
+                <tr class="hidden">
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                </tr>
+                <tr>
+                    <td><a href="">Press Room</a></td>
+                    <td><a href="">Kids</a></td>
+                    <td><a href="">Gift Card Balance</a></td>
+                    <td><a href=""></a>FAQs</td>
+                    <td><a href="">Sign Up for Emails</a></td>
+                </tr>
+                <tr class="hidden">
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                </tr>
+                <tr>
+                    <td><a href="">Locations</a></td>
+                    <td><a href="">Gifts</a></td>
+                    <td><a href="">My Account</a></td>
+                    <td></td>
+                    <td><a href="">Fill Out Our Survey</a></td>
+                </tr>
+                <tr class="hidden">
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                </tr>
+                <tr>
+                    <td><a href="">Portals</a></td>
+                    <td><a href="">Groceries</a></td>
+                    <td><a href="">Shipping & Returns</a></td>
+                    <td></td>
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=100087649245588" target="_blank"><img src="Resources/icnFacebook.png" width="30" />&nbsp;&nbsp;</a>
+                        <a href="https://twitter.com/NotABurger0" target="_blank"><img src="Resources/icnTwitter.png" width="30" />&nbsp;&nbsp;</a>
+                        <a href="" target="_blank"><img src="Resources/icnInstagram.png" width="30" />&nbsp;&nbsp;</a>
+                        <a href="https://www.youtube.com/channel/UCfCUxpbpaH6uKF6cN92s1Mw" target="_blank"><img src="Resources/icnYoutube.png" width="30" />&nbsp;&nbsp;</a>
+                    </td>
+                </tr>
+                <tr class="hidden">
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                    <th>&lt;&gt;</th>
+                </tr>
+                <tr>
+                    <td><a href="">Franchising</a></td>
+                    <td><a href="">Accessories</a></td>
+                    <td><a href="">FAQs</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr />
+            <ul>
+                <li class="bottomMenu"><a href="">Contact Us</a></li>
+                <li class="bottomMenu"><a href="">Nutritional Information</a></li>
+                <li class="bottomMenu"><a href="">Terms & Conditions</a></li>
+                <li class="bottomMenu"><a href="">Accessibility Statement</a></li>
+            </ul>
+            <span><img src="Resources/Notaburger Logo_transparent.png" width="60" /></span>
+        </div>
+    </nav>
+</footer>
+
 </html>

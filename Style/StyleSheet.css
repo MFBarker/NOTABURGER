@@ -1,4 +1,16 @@
-﻿html
+﻿/* Testing fonts*/
+@font-face
+{
+    font-family: Whata;
+    src: url(Resources/whatafont/whata2.tff) format('truetype');
+}
+.FontMarket
+{
+    font-family: Whata;
+}
+
+
+html
 {
     height: 100%;
     padding: 0px;
@@ -16,7 +28,7 @@ header {
     margin: 0;
     background-color: blue;
     color: white;
-    font-family: 'whatafont_expandedexpanded';
+    font-family: Whata;
 }
 
 .topMenu {
@@ -109,12 +121,12 @@ span
 }
 
 .tab {
-    overflow: hidden;
-    border: 1px solid blue;
-    background-color: blue;
+    overflow: initial;
+    border: 2px double white;
+    background-color: white;
     text-align: center;
-    display: inline-block;
-    font-family: 'whatafont_expandedexpanded';
+    
+    font-family: Whata;
 }
 
     .tab button {
@@ -127,7 +139,8 @@ span
         transition: 0.3s;
         font-size: 17px;
         line-height: 3em;
-        text-align: left;
+        color: black;
+        text-align: center;
         font-family: 'whatafont_expandedexpanded';
     }
 
@@ -138,9 +151,28 @@ span
 .tabcontent {
     display: none;
     text-align: center;
-    padding: 6px 12px;
+    padding-block: 6px 12px;
     border: 1px solid blue;
     background-color: cornflowerblue;
     border-top: none;
     font-family: 'whatafont_expandedexpanded';
+}
+
+.space 
+{
+    margin-top: 160px;
+}
+
+.bigdot{
+    list-style:none;
+    text-align: center;
+}
+
+.img_ {
+    border: 10px double white;
+}
+
+.footer_
+{
+    margin-block: 160px 200px;
 }
