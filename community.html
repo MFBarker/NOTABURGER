@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <title>NOTABURGER | Community</title>
     <link rel="stylesheet" href="Style/StyleSheet.css">
-    <script src="Scripts/menu_JS.js" defer></script>
+    <link rel="stylesheet" href="Style/secretsStyle.css">
+    <script src="Scripts/secrets_JS.js" defer></script>
 </head>
 
 <header>
@@ -19,6 +20,8 @@
                 <li class="topMenu"><a href="stories.html"><strong>Stories</strong></a></li>
                 <li class="topMenu"><a href="community.html"><strong>Community</strong></a></li>
                 <li class="topMenu"> <a href="menu.html"><button><img src="Resources/BagIcon.png" width="15" /><strong>Start Ordering</strong></button></a></li>
+                <input id="searchBar" placeholder="Search.." />
+                <button id="searchBtn" onclick="SearchBar()" class="search"><img src="Resources/searchIcon.png" width="25" /></button>
             </ul>
         </div>
     </nav>
@@ -62,7 +65,7 @@
                 <li>
                     <h2><strong>No Wait!</strong></h2>
                     <h4>
-                        We understand if your group is on a rush to go and win that championship, so call us! We will be prepared with a simple call letting us know what time,
+                        We understand if your group is on a rush to go win that championship, so call us! We will be prepared with a simple call letting us know what time,
                         location and group size!
                     </h4>
                 </li>
@@ -85,13 +88,14 @@
     <div id="Missing" class="tabcontent">
         <section>
             <img class="img_" src="Resources/Missing.jpg" />
-            <h1>  ========================= Your Help Is Needed! ========================= </h1>
+            <h1 id="secret">  ========================= Your Help Is Needed! ========================= </h1>
             <h2>
-                NotABurger is here to help along the National Missing and Unidentified Persons (NamUS) to recover people and stop communities and families to stop suffering.
-                More than 600,000 people go missing each year, from kidnappings to accidents, approximately 4,400 bodies are recovered each year.
+                NotABurger is here to help along the National Missing and Unidentified Persons (NamUS) to recover people.
+                More than <button id="button_" class="secret_" onclick="Hidden_()"><strong>600,000</strong></button> people go missing each year, from kidnappings to accidents, approximately 4,400 bodies are recovered each year.
                 Don't allow people or communities to be part of this statistics, make a change by keeping an eye out! If you see something, say something!
             </h2>
         </section>
+
     </div>
 
 

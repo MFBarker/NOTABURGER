@@ -3,6 +3,7 @@
 <head>
 
     <link rel="stylesheet" href="Style/StyleSheet.css" />
+    <script src="Scripts/secrets_JS.js" defer></script>
     <title>NOTABURGER | Home</title>
 </head>
 
@@ -19,8 +20,12 @@
                     <li class="topMenu"><a href="stories.html"><strong>Stories</strong></a></li>
                     <li class="topMenu"><a href="community.html"><strong>Community</strong></a></li>
                     <li class="topMenu"> <a href="menu.html"><button><img src="Resources/BagIcon.png" width="15" /><strong>Start Ordering</strong></button></a></li>
+                    <input id="searchBar" placeholder="Search.." /> 
+                    <button id="searchBtn" onclick="SearchBar()" class="search"><img src="Resources/searchIcon.png" width="25"/></button>
                 </ul>
             </div>
+
+            <!-- SEARCH BAR-->
         </nav>
     </header>
     <!-- MAIN BODY -->
