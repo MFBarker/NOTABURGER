@@ -20,7 +20,7 @@ for (i = 0; i < coll.length; i++) {
 //Burger Select by default
 document.getElementById("BdefaultBread").checked = true;
 document.getElementById("Bpatty").checked = true;
-document.getElementById("Btomato").checked = true;
+document.getElementById("T").checked = true;
 document.getElementById("Bpickles").checked = true;
 document.getElementById("L").checked = true;
 document.getElementById("BonionD").checked = true;
@@ -30,19 +30,27 @@ document.getElementById("Bmustard").checked = true;
 
 //button for secret button
 function addClick() {
-    // Number 15 - Burger King Foot Lettuce
+    // Burger King Foot Lettuce (BKFL)
     var addMenu = document.getElementById("AddButton");
     var B = document.getElementById("B");
     var K = document.getElementById("K");
     var F = document.getElementById("F");
     var L = document.getElementById("L");
+    // Jolibee Fried Towel (JBFT)
+    var J = document.getElementById("J");
+    var T = document.getElementById("T");
 
     var secret = document.getElementById("secret");
 
     addMenu.addEventListener("click", function () {
         this.classList.toggle("active");
-        if (B.checked == 1 && K.checked == 1 && F.checked == 1 && L.checked == 1) {
-            console.log("number 15");
+        if (B.checked == 1 && K.checked == 1 && F.checked == 1 && L.checked == 1 ) {
+            console.log("Number 15");
+            secret.textContent = "Code Goes Here";
+        }
+        else if (J.checked == 1 && B.checked == 1 && F.checked == 1 && T.checked == 1)
+        {
+            console.log("Delicious");
             secret.textContent = "Code Goes Here";
         }
         else { console.log("click"); }
