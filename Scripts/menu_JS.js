@@ -17,8 +17,20 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
+//Burger Select by default
+document.getElementById("BdefaultBread").checked = true;
+document.getElementById("Bpatty").checked = true;
+document.getElementById("Btomato").checked = true;
+document.getElementById("Bpickles").checked = true;
+document.getElementById("L").checked = true;
+document.getElementById("BonionD").checked = true;
+document.getElementById("Bmustard").checked = true;
+//Chicken Selected By Default
+
+
 //button for secret button
 function addClick() {
+    // Number 15 - Burger King Foot Lettuce
     var addMenu = document.getElementById("AddButton");
     var B = document.getElementById("B");
     var K = document.getElementById("K");
