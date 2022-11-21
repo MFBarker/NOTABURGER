@@ -93,8 +93,8 @@
                             <label for="American Cheese">American Cheese</label>
 
                             <!--<input type="image" src="Resources/btnMinus.png" id="minus" onclick="down();" width="25" padding="0px" margin="0px" />
-                        <input  id ="numDisplay "tabindex="0" label="quantity" type="text" readonly="readonly" class="numDisplay" min="0" max="7" value="1"/>
-                        <input type="image" src="Resources/btnPlus.png" id="plus" onclick="up();" width="25" padding="0px" margin="0px" />-->
+                <input  id ="numDisplay "tabindex="0" label="quantity" type="text" readonly="readonly" class="numDisplay" min="0" max="7" value="1"/>
+                <input type="image" src="Resources/btnPlus.png" id="plus" onclick="up();" width="25" padding="0px" margin="0px" />-->
                         </td>
                         <td>
                             <input type="checkbox" name="cheese" value="Monterary Jack Cheese" />
@@ -107,7 +107,7 @@
                 <table>
                     <tr>
                         <td>
-                            <input type="checkbox" name="addOns" value="Bacon Slices" />
+                            <input id="B" type="checkbox" name="addOns" value="Bacon Slices" />
                             <label for="Bacon Slices">Bacon Slices</label>
                         </td>
                         <td>
@@ -122,7 +122,10 @@
                             <input type="checkbox" name="addOns" value="Green Chiles" />
                             <label for="Green Chiles">Green Chiles</label>
                         </td>
-
+                        <td>
+                            <input id="F" type="checkbox" name="addOns" value="Frisée" />
+                            <label for="Frisée">Frisée</label>
+                        </td>
                     </tr>
                 </table>
 
@@ -136,7 +139,7 @@
 
                         </td>
                         <td>
-                            <input type="checkbox" name="toppings" value="Lettuce" />
+                            <input id="L" type="checkbox" name="toppings" value="Lettuce" />
                             <label for="Lettuce">Lettuce</label>
 
                         </td>
@@ -172,7 +175,7 @@
 
                         </td>
                         <td>
-                            <input type="checkbox" name="sauces" value="Ketchup" />
+                            <input id="K" type="checkbox" name="sauces" value="Ketchup" />
                             <label for="Ketchup">Ketchup</label>
 
                         </td>
@@ -184,6 +187,7 @@
                     </tr>
                 </table>
                 <br />
+                <input id="AddButton" type="image" src="Resources/btnAddToOrder.png" onclick="addClick()"/>
             </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
@@ -469,7 +473,7 @@
             </p>
         </div>
         <div>
-            <br />
+            <div id="secret"></div>
             <br />
             <br />
             <br />

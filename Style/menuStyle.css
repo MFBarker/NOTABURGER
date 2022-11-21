@@ -123,3 +123,17 @@ td {
 .spacer {
     margin-top:200px;
 }
+
+#AddButton {
+    height: 50px;
+    width: contain;
+    padding: 2px 5px 2px 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+#secret {
+    text-align: center;
+    color: red;
+}
