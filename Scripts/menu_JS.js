@@ -30,13 +30,13 @@ document.getElementById("Bmustard").checked = true;
 
 //button for secret button
 function addClick() {
-    // Burger King Foot Lettuce (BKFL)
+    // Burger King Foot Lettuce (BKFL) : (Bacon, Ketchup, Frisee, Lettuce)
     var addMenu = document.getElementById("AddButton");
     var B = document.getElementById("B");
     var K = document.getElementById("K");
     var F = document.getElementById("F");
     var L = document.getElementById("L");
-    // Jolibee Fried Towel (JBFT)
+    // Jolibee Fried Towel (JBFT) : (Jalapenos, Bacon, Frisee, Tomatos)
     var J = document.getElementById("J");
     var T = document.getElementById("T");
 
