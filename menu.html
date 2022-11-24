@@ -52,7 +52,7 @@
                 <table>
                     <tr>
                         <td>
-                            <input id="BdefaultBread" type="radio" name="bread" value="Large Bun">
+                            <input id="TB_defaultBread" type="radio" name="bread" value="Large Bun">
                             <label for="Large Bun">Large Bun</label>
                         </td>
                         <td>
@@ -78,9 +78,9 @@
                 <table>
                     <tr>
                         <td>
-                            <input id="Bpatty" type="radio" name="extraPatty" value="Large Turkey Patty (1)" />
+                            <input id="TB_patty" type="radio" name="extraPatty" value="Large Turkey Patty (1)" />
                             <label for="Large Turkey Patty">Large Turkey Patty</label>
-                            <input type="number" id="Pquantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                            <input type="number" id="TB_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
                         </td>
                     </tr>
                 </table>
@@ -109,12 +109,12 @@
                             <label for="Chili">Chili</label>
                         </td>
                         <td>
-                            <input id="B" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_TB_AddOns()"/>
+                            <input id="TB_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_TB_AddOns()"/>
                             <label for="Bacon Slices">Bacon Slices</label>
                             <input type="number" id="TB_BCNquantity" name="quantity" min="1" max="8" class="quantity">
                         </td>
                         <td>
-                            <input id="J" type="checkbox" name="addOns" value="Jalapenos" onclick="check_TB_AddOns()"/>
+                            <input id="TB_Jalapeno" type="checkbox" name="addOns" value="Jalapenos" onclick="check_TB_AddOns()"/>
                             <label for="Jalapenos">Jalapenos</label>
                             <input type="number" id="TB_JPNquantity" name="quantity" min="1" max="8" class="quantity">
                         </td>
@@ -140,7 +140,7 @@
                 <table>
                     <tr>
                         <td>
-                            <input id="T" type="checkbox" name="toppings" value="Tomato" onclick="check_TB_Toppings()"/>
+                            <input id="TB_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_TB_Toppings()"/>
                             <label for="Tomato">Tomato</label>
                             <select name="selection" id="TB_Tomato">
                                 <option value="Less">Less</option>
@@ -149,7 +149,7 @@
                             </select>
                         </td>
                         <td>
-                            <input id="L" type="checkbox" name="toppings" value="Lettuce" onclick="check_TB_Toppings()"/>
+                            <input id="TB_LettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_TB_Toppings()"/>
                             <label for="Lettuce">Lettuce</label>
                             <select name="selection" id="TB_Lettuce">
                                 <option value="Less">Less</option>
@@ -158,7 +158,7 @@
                             </select>
                         </td>
                         <td>
-                            <input id="Bpickles" type="checkbox" name="toppings" value="Pickles" onclick="check_TB_Toppings()"/>
+                            <input id="TB_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_TB_Toppings()"/>
                             <label for="Pickles">Pickles</label>
                             <select name="selection" id="TB_Pickles">
                                 <option value="Less">Less</option>
@@ -169,7 +169,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input id="BonionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_TB_Toppings()"/>
+                            <input id="TB_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_TB_Toppings()"/>
                             <label for="Diced Onions">Diced Onions</label>
                             <select name="selection" id="TB_DiOnion">
                                 <option value="Less">Less</option>
@@ -178,7 +178,7 @@
                             </select>
                         </td>
                         <td>
-                            <input id="BGrOnion" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_TB_Toppings()"/>
+                            <input id="TB_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_TB_Toppings()"/>
                             <label for="Grilled Onions">Grilled Onions</label>
                             <select name="selection" id="TB_GrOnion">
                                 <option value="Less">Less</option>
@@ -187,7 +187,7 @@
                             </select>
                         </td>
                         <td>
-                            <input id="F" type="checkbox" name="toppings" value="Frisée" onclick="check_TB_Toppings()"/>
+                            <input id="TB_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_TB_Toppings()"/>
                             <label for="Frisée">Frisée</label>
                             <select name="selection" id="TB_Frisee">
                                 <option value="Less">Less</option>
@@ -220,7 +220,7 @@
                             </select>
                         </td>
                         <td>
-                            <input id="K" type="checkbox" name="sauces" value="Ketchup" onclick="check_TB_Sauce()"/>
+                            <input id="TB_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_TB_Sauce()"/>
                             <label for="Ketchup">Ketchup</label>
                             <select name="selection" id="TB_Ketchup">
                                 <option value="Less">Less</option>
@@ -240,7 +240,7 @@
                     </tr>
                 </table>
                 <br />
-                <input id="AddButton" type="image" src="Resources/btnAddToOrder.png" onclick="addClick()"/>
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()"/>
             </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
@@ -274,7 +274,203 @@
                 <b>Includes:</b> Large Bun (5"), Large Salmon Patty (5") (1), Tomato (Regular),
                 Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
             </p>
-            <!-- Customize Stuff -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SB_defaultBread" type="radio" name="bread" value="Large Bun">
+                            <label for="Large Bun">Large Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SB_patty" type="radio" name="extraPatty" value="Large Salmon Patty" />
+                            <label for="Large Salmon Patty">Large Salmon Patty</label>
+                            <input type="number" id="SB_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SB_AmCheese" type="checkbox" name="cheese" value="American Cheese" onclick="check_SB_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="SB_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="SB_MnJkCheese" type="checkbox" name="cheese" value="Monterary Jack Cheese" onclick="check_SB_AddOns()" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                            <input type="number" id="SB_MJquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Chili" />
+                            <label for="Chili">Chili</label>
+                        </td>
+                        <td>
+                            <input id="SB_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_SB_AddOns()" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                            <input type="number" id="SB_BCNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="SB_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_SB_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="SB_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="SB_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_SB_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="SB_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="SB_Avocado" type="checkbox" name="addOns" value="TB_Avocado" onclick="check_SB_AddOns()" />
+                            <label for="TB_Avocado">Avocados</label>
+                            <input type="number" id="SB_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="SB_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_SB_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="SB_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SB_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_SB_Toppings()" />
+                            <label for="Tomato">Tomato</label>
+                            <select name="selection" id="SB_Tomato">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_LettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_SB_Toppings()" />
+                            <label for="Lettuce">Lettuce</label>
+                            <select name="selection" id="SB_Lettuce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_SB_Toppings()" />
+                            <label for="Pickles">Pickles</label>
+                            <select name="selection" id="SB_Pickles">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="SB_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_SB_Toppings()" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            <select name="selection" id="SB_DiOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_SB_Toppings()" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            <select name="selection" id="SB_GrOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_SB_Toppings()" />
+                            <label for="Frisée">Frisée</label>
+                            <select name="selection" id="SB_Frisee">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SB_mustard" type="checkbox" name="sauces" value="Mustard" onclick="check_SB_Sauce()" />
+                            <label for="Mustard">Mustard</label>
+                            <select name="selection" id="SB_Mustard">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_Mayonnaise" type="checkbox" name="sauces" value="Mayonnaise" onclick="check_SB_Sauce()" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            <select name="selection" id="SB_Mayo">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_SB_Sauce()" />
+                            <label for="Ketchup">Ketchup</label>
+                            <select name="selection" id="SB_Ketchup">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="SB_HoneyBBQ" type="checkbox" name="sauces" value="Honey BBQ" onclick="check_SB_Sauce()" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            <select name="selection" id="SB_BBQ">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Wheat, Gluten, Fish <br />
@@ -307,7 +503,203 @@
                 <b>Includes:</b> Large Bun (5"), Large Impossible Patty (5") (1), Tomato (Regular),
                 Lettuce (Regular), Pickles (Regular), Diced Onions (Regular), Mustard (Regular)
             </p>
-            <!-- Customize Stuff -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="IB_defaultBread" type="radio" name="bread" value="Large Bun">
+                            <label for="Large Bun">Large Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="IB_patty" type="radio" name="extraPatty" value="Large Impossible Patty" />
+                            <label for="Large Impossible Patty">Large Impossible Patty</label>
+                            <input type="number" id="IB_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="IB_AmCheese" type="checkbox" name="cheese" value="American Cheese" onclick="check_IB_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="IB_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="IB_MnJkCheese" type="checkbox" name="cheese" value="Monterary Jack Cheese" onclick="check_IB_AddOns()" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                            <input type="number" id="IB_MJquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Chili" />
+                            <label for="Chili">Chili</label>
+                        </td>
+                        <td>
+                            <input id="IB_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_IB_AddOns()" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                            <input type="number" id="IB_BCNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="IB_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_IB_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="IB_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="IB_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_IB_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="IB_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="IB_Avocado" type="checkbox" name="addOns" value="TB_Avocado" onclick="check_IB_AddOns()" />
+                            <label for="TB_Avocado">Avocados</label>
+                            <input type="number" id="IB_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="IB_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_IB_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="IB_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="IB_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_IB_Toppings()" />
+                            <label for="Tomato">Tomato</label>
+                            <select name="selection" id="IB_Tomato">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_LettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_IB_Toppings()" />
+                            <label for="Lettuce">Lettuce</label>
+                            <select name="selection" id="IB_Lettuce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_IB_Toppings()" />
+                            <label for="Pickles">Pickles</label>
+                            <select name="selection" id="IB_Pickles">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="IB_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_IB_Toppings()" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            <select name="selection" id="IB_DiOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_IB_Toppings()" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            <select name="selection" id="IB_GrOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_IB_Toppings()" />
+                            <label for="Frisée">Frisée</label>
+                            <select name="selection" id="IB_Frisee">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="IB_mustard" type="checkbox" name="sauces" value="Mustard" onclick="check_IB_Sauce()" />
+                            <label for="Mustard">Mustard</label>
+                            <select name="selection" id="IB_Mustard">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_Mayonnaise" type="checkbox" name="sauces" value="Mayonnaise" onclick="check_IB_Sauce()" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            <select name="selection" id="IB_Mayo">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_IB_Sauce()" />
+                            <label for="Ketchup">Ketchup</label>
+                            <select name="selection" id="IB_Ketchup">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="IB_HoneyBBQ" type="checkbox" name="sauces" value="Honey BBQ" onclick="check_IB_Sauce()" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            <select name="selection" id="IB_BBQ">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Wheat, Gluten <br />
@@ -339,7 +731,203 @@
                 <b>NotaMeal®:</b> $8.19 (805 Cal) <br /> <br />
                 <b>Includes:</b> Grass
             </p>
-            <!-- Customize Stuff -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GB_defaultBread" type="radio" name="bread" value="Large Bun">
+                            <label for="Large Bun">Large Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GB_patty" type="radio" name="extraPatty" value="Large Grass Patty (1)" />
+                            <label for="Large Grass Patty">Large Grass Patty</label>
+                            <input type="number" id="GB_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GB_AmCheese" type="checkbox" name="cheese" value="American Cheese" onclick="check_GB_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="GB_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GB_MnJkCheese" type="checkbox" name="cheese" value="Monterary Jack Cheese" onclick="check_GB_AddOns()" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                            <input type="number" id="GB_MJquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Chili" />
+                            <label for="Chili">Chili</label>
+                        </td>
+                        <td>
+                            <input id="GB_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_GB_AddOns()" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                            <input type="number" id="GB_BCNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GB_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_GB_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="GB_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GB_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_GB_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="GB_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GB_Avocado" type="checkbox" name="addOns" value="TB_Avocado" onclick="check_GB_AddOns()" />
+                            <label for="TB_Avocado">Avocados</label>
+                            <input type="number" id="GB_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GB_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_GB_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="GB_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GB_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_GB_Toppings()" />
+                            <label for="Tomato">Tomato</label>
+                            <select name="selection" id="GB_Tomato">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_LettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_GB_Toppings()" />
+                            <label for="Lettuce">Lettuce</label>
+                            <select name="selection" id="GB_Lettuce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_GB_Toppings()" />
+                            <label for="Pickles">Pickles</label>
+                            <select name="selection" id="GB_Pickles">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="GB_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_GB_Toppings()" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            <select name="selection" id="GB_DiOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_GB_Toppings()" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            <select name="selection" id="GB_GrOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_GB_Toppings()" />
+                            <label for="Frisée">Frisée</label>
+                            <select name="selection" id="GB_Frisee">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GB_mustard" type="checkbox" name="sauces" value="Mustard" onclick="check_GB_Sauce()" />
+                            <label for="Mustard">Mustard</label>
+                            <select name="selection" id="GB_Mustard">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_Mayonnaise" type="checkbox" name="sauces" value="Mayonnaise" onclick="check_GB_Sauce()" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            <select name="selection" id="GB_Mayo">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_GB_Sauce()" />
+                            <label for="Ketchup">Ketchup</label>
+                            <select name="selection" id="GB_Ketchup">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GB_HoneyBBQ" type="checkbox" name="sauces" value="Honey BBQ" onclick="check_GB_Sauce()" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            <select name="selection" id="GB_BBQ">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input id="secretButton" type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="addClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Grass <br />
@@ -375,7 +963,208 @@
                 <b>Includes:</b>Brioche Bun (4"), Grilled Chicken Filet (1), Tomato (Regular),
                 Leaf Lettuce (Regular), NotaSauce® (Regular)
             </p>
-            <!-- Customize Stuff -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input id="GrChS_defaultBread" type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GrChS_patty" type="radio" name="extraPatty" value="Large Grilled Chicken Filet" />
+                            <label for="Large Grilled Chicken Filet">Large Grilled Chicken Filet</label>
+                            <input type="number" id="GrChS_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GrChS_AmCheese" type="checkbox" name="cheese" value="American Cheese" onclick="check_GrChS_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="GrChS_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GrChS_MnJkCheese" type="checkbox" name="cheese" value="Monterary Jack Cheese" onclick="check_GrChS_AddOns()" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                            <input type="number" id="GrChS_MJquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Chili" />
+                            <label for="Chili">Chili</label>
+                        </td>
+                        <td>
+                            <input id="GrChS_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_GrChS_AddOns()" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                            <input type="number" id="GrChS_BCNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GrChS_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_GrChS_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="GrChS_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GrChS_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_GrChS_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="GrChS_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GrChS_Avocado" type="checkbox" name="addOns" value="TB_Avocado" onclick="check_GrChS_AddOns()" />
+                            <label for="TB_Avocado">Avocados</label>
+                            <input type="number" id="GrChS_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="GrChS_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_GrChS_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="GrChS_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GrChS_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_GrChS_Toppings()" />
+                            <label for="Tomato">Tomato</label>
+                            <select name="selection" id="GrChS_Tomato">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_LeafLettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_GrChS_Toppings()" />
+                            <label for="Lettuce">Lettuce</label>
+                            <select name="selection" id="GrChS_LeafLettuce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_GrChS_Toppings()" />
+                            <label for="Pickles">Pickles</label>
+                            <select name="selection" id="GrChS_Pickles">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="GrChS_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_GrChS_Toppings()" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            <select name="selection" id="GrChS_DiOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_GrChS_Toppings()" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            <select name="selection" id="GrChS_GrOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_GrChS_Toppings()" />
+                            <label for="Frisée">Frisée</label>
+                            <select name="selection" id="GrChS_Frisee">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="GrChS_notASauce" type="checkbox" name="sauces" value="NotASauce" onclick="check_GrChS_Sauce()" />
+                            <label for="NotASauce">NotASauce</label>
+                            <select name="selection" id="GrChS_NotASauce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_mustard" type="checkbox" name="sauces" value="Mustard" onclick="check_GrChS_Sauce()" />
+                            <label for="Mustard">Mustard</label>
+                            <select name="selection" id="GrChS_Mustard">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_Mayonnaise" type="checkbox" name="sauces" value="Mayonnaise" onclick="check_GrChS_Sauce()" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            <select name="selection" id="GrChS_Mayo">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_GrChS_Sauce()" />
+                            <label for="Ketchup">Ketchup</label>
+                            <select name="selection" id="GrChS_Ketchup">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="GrChS_HoneyBBQ" type="checkbox" name="sauces" value="Honey BBQ" onclick="check_GrChS_Sauce()" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            <select name="selection" id="GrChS_BBQ">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Egg, Milk, Gluten <br />
@@ -408,7 +1197,208 @@
                 <b>Includes:</b>Brioche Bun (4"), Chicken Filet (1), Tomato (Regular),
                 Leaf Lettuce (Regular), NotaSauce® (Regular)
             </p>
-            <!-- Customize Stuff -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bread -->
+                <div><b>Bread</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="bread" value="Small Bun">
+                            <label for="Small Bun">Small Bun</label>
+                        </td>
+                        <td>
+                            <input id="ChS_defaultBread" type="radio" name="bread" value="Brioche Bun">
+                            <label for="Brioche Bun">Brioche Bun</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="Texas Toast">
+                            <label for="Texas Toast">Texas Toast</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="No Bun">
+                            <label for="No Bun">No Bun</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Extra Patty -->
+                <div><b>Extra Patty</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ChS_patty" type="radio" name="extraPatty" value="Chicken Filet" />
+                            <label for="Large Chicken Filet">Large Chicken Filet</label>
+                            <input type="number" id="ChS_quantity" name="quantity" min="1" max="8" value="1" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ChS_AmCheese" type="checkbox" name="cheese" value="American Cheese" onclick="check_ChS_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="ChS_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ChS_MnJkCheese" type="checkbox" name="cheese" value="Monterary Jack Cheese" onclick="check_ChS_AddOns()" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                            <input type="number" id="ChS_MJquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="addOns" value="Chili" />
+                            <label for="Chili">Chili</label>
+                        </td>
+                        <td>
+                            <input id="ChS_Bacon" type="checkbox" name="addOns" value="Bacon Slices" onclick="check_ChS_AddOns()" />
+                            <label for="Bacon Slices">Bacon Slices</label>
+                            <input type="number" id="ChS_BCNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ChS_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_ChS_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="ChS_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ChS_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_ChS_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="ChS_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ChS_Avocado" type="checkbox" name="addOns" value="TB_Avocado" onclick="check_ChS_AddOns()" />
+                            <label for="TB_Avocado">Avocados</label>
+                            <input type="number" id="ChS_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ChS_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_ChS_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="ChS_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Toppings -->
+                <div><b>Toppings</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ChS_TomatoS" type="checkbox" name="toppings" value="Tomato" onclick="check_ChS_Toppings()" />
+                            <label for="Tomato">Tomato</label>
+                            <select name="selection" id="ChS_Tomato">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_LeafLettuceS" type="checkbox" name="toppings" value="Lettuce" onclick="check_ChS_Toppings()" />
+                            <label for="Lettuce">Lettuce</label>
+                            <select name="selection" id="ChS_LeafLettuce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_pickles" type="checkbox" name="toppings" value="Pickles" onclick="check_ChS_Toppings()" />
+                            <label for="Pickles">Pickles</label>
+                            <select name="selection" id="ChS_Pickles">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="ChS_onionD" type="checkbox" name="toppings" value="Diced Onions" onclick="check_ChS_Toppings()" />
+                            <label for="Diced Onions">Diced Onions</label>
+                            <select name="selection" id="ChS_DiOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_GrOnionS" type="checkbox" name="toppings" value="Grilled Onions" onclick="check_ChS_Toppings()" />
+                            <label for="Grilled Onions">Grilled Onions</label>
+                            <select name="selection" id="ChS_GrOnion">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_FriseeS" type="checkbox" name="toppings" value="Frisée" onclick="check_ChS_Toppings()" />
+                            <label for="Frisée">Frisée</label>
+                            <select name="selection" id="ChS_Frisee">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sauces -->
+                <div><b>Sauces</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ChS_notASauce" type="checkbox" name="sauces" value="NotASauce" onclick="check_ChS_Sauce()" />
+                            <label for="NotASauce">NotASauce</label>
+                            <select name="selection" id="ChS_NotASauce">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_mustard" type="checkbox" name="sauces" value="Mustard" onclick="check_ChS_Sauce()" />
+                            <label for="Mustard">Mustard</label>
+                            <select name="selection" id="ChS_Mustard">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_Mayonnaise" type="checkbox" name="sauces" value="Mayonnaise" onclick="check_ChS_Sauce()" />
+                            <label for="Mayonnaise">Mayonnaise</label>
+                            <select name="selection" id="ChS_Mayo">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_KetchupS" type="checkbox" name="sauces" value="Ketchup" onclick="check_ChS_Sauce()" />
+                            <label for="Ketchup">Ketchup</label>
+                            <select name="selection" id="ChS_Ketchup">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input id="ChS_HoneyBBQ" type="checkbox" name="sauces" value="Honey BBQ" onclick="check_ChS_Sauce()" />
+                            <label for="Honey BBQ">Honey BBQ</label>
+                            <select name="selection" id="ChS_BBQ">
+                                <option value="Less">Less</option>
+                                <option value="Regular">Regular</option>
+                                <option value="More">More</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Egg, Milk, Wheat, Soy, Gluten <br />
@@ -440,7 +1430,22 @@
                 <b>NotaMeal®:</b> $7.99 (1470 Cal)<br /> <br />
                 <b>Includes:</b> 3 pcs. Chicken Tenders, Choice of Dipping Sauce
             </p>
-            <!-- Customize Stuff -->
+            <table>
+                <tr> <td> <b>Dipping Sauces:</b> </td> </tr>
+                <tr>
+                    <td> <input type="radio" id="CT_Gravy" value="Gravy"><label for="Gravy">Gravy</label> </td>
+                    <td> <input type="radio" id="CT_HoneyBBQ" value="Honey BBQ"><label for="Honey BBQ">Honey BBQ</label> </td>
+                    <td> <input type="radio" id="CT_HoneyButter" value="Honey Butter"><label for="Honey Butter">Honey Butter</label> </td>
+                    <td> <input type="radio" id="CT_HoneyMustard" value="Honey Mustard"><label for="Honey Mustard">Honey Mustard Dressing</label> </td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="CT_JpnRanch" value="Jalapeno Ranch"><label for="Jalapeno Ranch">Jalapeno Ranch</label> </td>
+                    <td> <input type="radio" id="CT_Ranch" value="Ranch Dressing"><label for="Ranch Dressing">Ranch Dressing</label> </td>
+                    <td> <input type="radio" id="CT_ThousIsland" value="1000 Island Dressing"><label for="1000 Island Dressing">1000 Island Dressing</label> </td>
+                    <td> <input type="radio" id="CT_None" value="No Dipping Sauce"><label for="No Dipping Sauce">No Dipping Sauce</label> </td>
+                </tr>
+            </table> <br />
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Wheat, Soy, Gluten, Milk <br />
@@ -473,14 +1478,15 @@
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
-                    <tr> 
-                        <td> Small: $2.39 (280 Cal)</td>
-                        <td> Medium: $2.69 (420 Cal)</td>
-                        <td> Large: $2.99 (560 Cal)</td> 
+                    <tr>
+                        <td> <input type="radio" id="Fries_S" value="Small"><label for="Small">Small: $2.39 (280 Cal)</label> </td>
+                        <td> <input type="radio" id="Fries_M" value="Medium"><label for="Medium">Medium: $2.69 (420 Cal)</label> </td>
+                        <td> <input type="radio" id="Fries_L" value="Large"><label for="Large">Large: $2.99 (560 Cal)</label> </td>
                     </tr>
                 </table> <br />
                 <b>Includes:</b> Fries
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy <br />
@@ -503,12 +1509,13 @@
                 <table>
                     <tr> <td> <b>Sizes:</b> </td> </tr>
                     <tr>
-                        <td> Medium: $2.89 (300 Cal)</td>
-                        <td> Large: $3.49 (450 Cal)</td>
+                        <td> <input type="radio" id="OnRings_M" value="Medium"><label for="Medium">Medium: $2.89 (300 Cal)</label> </td>
+                        <td> <input type="radio" id="OnRings_L" value="Large"><label for="Large">Large: $3.49 (450 Cal)</label> </td>
                     </tr>
                 </table> <br />
                 <b>Includes:</b> Onion Rings
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Egg, Milk, Wheat, Soy, Gluten <br />
@@ -531,6 +1538,7 @@
                 $1.69 (30 Cal)<br /> <br />
                 <b>Includes:</b> Apple Slices
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> No Common Allergens <br />
@@ -764,7 +1772,7 @@
                     <tr>
                         <td><input type="radio" name="size-K" value="Kids"><label for="Kids">Kids (16 oz): $1.69 (0-220 Cal)</label></td>
                         <td><input type="radio" name="size-S" value="Small"><label for="Small">Small (20 oz): $2.19 (0-280 Cal)</label></td>
-                        <td><input type="radio" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (0-440 Cal)</label></td>
+                        <td><input type="radio" id="Soda_M" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (0-440 Cal)</label></td>
                         <td><input type="radio" name="size-L" value="Large"><label for="Large">Large (44 oz): $2.79 (0-610 Cal)</label></td>
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
@@ -785,7 +1793,7 @@
                     <tr> <td> <b>Sizes:</b> </td> </tr>
                     <tr>
                         <td><input type="radio" name="size-S" value="Small"><label for="Small">Small (12 oz): $1.59 (5 Cal)</label></td>
-                        <td><input type="radio" name="size-M" value="Medium"><label for="Medium">Medium (16 oz): $1.89 (0 Cal)</label></td>
+                        <td><input type="radio" id="Coffee_M" name="size-M" value="Medium"><label for="Medium">Medium (16 oz): $1.89 (0 Cal)</label></td>
                         <td><input type="radio" name="size-L" value="Large"><label for="Large">Large (20 oz): $2.19 (0 Cal)</label></td>
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
@@ -805,7 +1813,7 @@
                     <tr>
                         <td><input type="radio" name="size-K" value="Kids"><label for="Kids">Kids (16 oz): $1.69 (0-220 Cal)</label></td>
                         <td><input type="radio" name="size-S" value="Small"><label for="Small">Small (20 oz): $2.19 (0-280 Cal)</label></td>
-                        <td><input type="radio" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (10-440 Cal)</label></td>
+                        <td><input type="radio" id="Tea_M" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (10-440 Cal)</label></td>
                         <td><input type="radio" name="size-L" value="Large"><label for="Large">Large (44 oz): $2.79 (15-610 Cal)</label></td>
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
@@ -825,7 +1833,7 @@
                     <tr> <td> <b>Sizes:</b> </td> </tr>
                     <tr>
                         <td><input type="radio" name="size-S" value="Small"><label for="Small">Small (16 oz): $2.99 (400-430 Cal)</label></td>
-                        <td><input type="radio" name="size-M" value="Medium"><label for="Medium">Medium (20 oz): $3.49 (500-550 Cal)</label></td>
+                        <td><input type="radio" id="Shakes_M" name="size-M" value="Medium"><label for="Medium">Medium (20 oz): $3.49 (500-550 Cal)</label></td>
                         <td><input type="radio" name="size-L" value="Large"><label for="Large">Large (32 oz): $4.19 (800-870 Cal)</label></td>
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td></tr>

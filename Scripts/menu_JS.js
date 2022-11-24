@@ -14,42 +14,90 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-//Burgers by default
-document.getElementById("BdefaultBread").checked = true;
-document.getElementById("Bpatty").checked = true;
-document.getElementById("T").checked = true;
-document.getElementById("Bpickles").checked = true;
-document.getElementById("L").checked = true;
-document.getElementById("BonionD").checked = true;
+/* Burgers by default */
+//Turkey Burger
+document.getElementById("TB_defaultBread").checked = true;
+document.getElementById("TB_patty").checked = true;
+document.getElementById("TB_TomatoS").checked = true;
+document.getElementById("TB_pickles").checked = true;
+document.getElementById("TB_LettuceS").checked = true;
+document.getElementById("TB_onionD").checked = true;
 document.getElementById("TB_mustard").checked = true;
-//Chicken Selected By Default
-
+//Salmon Burger
+document.getElementById("SB_defaultBread").checked = true;
+document.getElementById("SB_patty").checked = true;
+document.getElementById("SB_TomatoS").checked = true;
+document.getElementById("SB_pickles").checked = true;
+document.getElementById("SB_LettuceS").checked = true;
+document.getElementById("SB_onionD").checked = true;
+document.getElementById("SB_mustard").checked = true;
+//Impossible Burger
+document.getElementById("IB_defaultBread").checked = true;
+document.getElementById("IB_patty").checked = true;
+document.getElementById("IB_TomatoS").checked = true;
+document.getElementById("IB_pickles").checked = true;
+document.getElementById("IB_LettuceS").checked = true;
+document.getElementById("IB_onionD").checked = true;
+document.getElementById("IB_mustard").checked = true;
+//Grass Burger
+document.getElementById("GB_defaultBread").checked = true;
+document.getElementById("GB_patty").checked = true;
+document.getElementById("GB_TomatoS").checked = true;
+document.getElementById("GB_pickles").checked = true;
+document.getElementById("GB_LettuceS").checked = true;
+document.getElementById("GB_onionD").checked = true;
+document.getElementById("GB_mustard").checked = true;
+/* Chicken Selected By Default */
+//Grilled Chicken Sandwich
+document.getElementById("GrChS_defaultBread").checked = true;
+document.getElementById("GrChS_patty").checked = true;
+document.getElementById("GrChS_TomatoS").checked = true;
+document.getElementById("GrChS_LeafLettuceS").checked = true;
+document.getElementById("GrChS_notASauce").checked = true;
+//Chicken Sandwich
+document.getElementById("ChS_defaultBread").checked = true;
+document.getElementById("ChS_patty").checked = true;
+document.getElementById("ChS_TomatoS").checked = true;
+document.getElementById("ChS_LeafLettuceS").checked = true;
+document.getElementById("ChS_notASauce").checked = true;
+//Chicken Tenders
+document.getElementById("CT_Gravy").checked = true;
+/* Sides */
+document.getElementById("Fries_M").checked = true;
+document.getElementById("OnRings_M").checked = true;
+/* Breakfast */
+/* Drinks and Shakes */
+document.getElementById("Soda_M").checked = true;
+document.getElementById("Coffee_M").checked = true;
+document.getElementById("Tea_M").checked = true;
+document.getElementById("Shakes_M").checked = true;
 
 //button for secret button
 function addClick() {
     // Burger King Foot Lettuce (BKFL) : (Bacon, Ketchup, Frisee, Lettuce)
-    var addMenu = document.getElementById("AddButton");
-    var B = document.getElementById("B");
-    var K = document.getElementById("K");
-    var F = document.getElementById("F");
-    var L = document.getElementById("L");
+    var addMenu = document.getElementById("secretButton");
+    var B = document.getElementById("GB_Bacon");
+    var K = document.getElementById("GB_KetchupS");
+    var F = document.getElementById("GB_FriseeS");
+    var L = document.getElementById("GB_LettuceS");
     // Jolibee Fried Towel (JBFT) : (Jalapenos, Bacon, Frisee, Tomatos)
-    var J = document.getElementById("J");
-    var T = document.getElementById("T");
+    var J = document.getElementById("GB_Jalapenos");
+    var T = document.getElementById("GB_TomatoS");
 
     var secret = document.getElementById("secret");
 
-    addMenu.addEventListener("click", function () {
-        this.classList.toggle("active");
-        if (B.checked == 1 && K.checked == 1 && F.checked == 1 && L.checked == 1 ) {
-            console.log("Number 15");
-            secret.textContent = "Code Goes Here";
-        }
-        else if (J.checked == 1 && B.checked == 1 && F.checked == 1 && T.checked == 1)
-        {
-            console.log("Delicious");
-            secret.textContent = "Code Goes Here";
-        }
-        else { console.log("click"); }
-    });
+    addMenu.classList.toggle("active");
+    if (B.checked == 1 && K.checked == 1 && F.checked == 1 && L.checked == 1) {
+        console.log("Number 15");
+        secret.textContent = "Code Goes Here";
+    }
+    else if (J.checked == 1 && B.checked == 1 && F.checked == 1 && T.checked == 1) {
+        console.log("Delicious");
+        secret.textContent = "Code Goes Here";
+    }
+    else { console.log("click"); }
+}
+
+function dudClick() {
+    console.log("DUD Click")
 }

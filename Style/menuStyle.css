@@ -124,7 +124,7 @@ td {
     margin-top:200px;
 }
 
-#AddButton {
+.AddButton {
     height: 50px;
     width: contain;
     padding: 2px 5px 2px 5px;
