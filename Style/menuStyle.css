@@ -137,3 +137,7 @@ td {
     text-align: center;
     color: red;
 }
+
+.quantity {
+    width: fit-content;
+}
