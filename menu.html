@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Style/menuStyle.css">
     <link rel="stylesheet" href="Style/StyleSheet.css" />
     <script src="Scripts/menu_JS.js" defer></script>
-    <script src="Scripts/menu_BurgerCustom_JS.js" defer></script>
+    <script src="Scripts/menu_Customization_JS.js" defer></script>
 </head>
 <body>
     <header>
@@ -1563,6 +1563,7 @@
                 $3.19 (630 Cal) <br /> <br />
                 <b>Includes:</b> 3 pcs Pancakes
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Egg, Milk, Wheat, Soy, Gluten <br />
@@ -1585,6 +1586,7 @@
                 $3.19 (630 Cal) <br /> <br />
                 <b>Includes:</b> 2 pcs Hashbrowns
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy <br />
@@ -1607,6 +1609,7 @@
                 $1.29 (290 Cal) <br /> <br />
                 <b>Includes:</b> 1 Buttermilk Biscuit
             </p>
+            <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Milk, Wheat, Gluten <br />
@@ -1629,7 +1632,33 @@
                 $2.19 (520 Cal) <br /> <br />
                 <b>Includes:</b> Buttermilk Biscuit, Choice of Sausage
             </p>
-            <!-- Customization (Sausage) -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Sausage -->
+                <div><b>Sausage</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="SauBis_defaultSausage" type="radio" name="sausage" value="Pork Sausage">
+                            <label for="Pork Sausage">Regular Sausage (Pork)</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sausage" value="Chicken Sausage">
+                            <label for="Chicken Sausage">Chicken Sausage</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sausage" value="Turkey Sausage">
+                            <label for="Turkey Sausage">Turkey Sausage</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="sausage" value="Impossible Sausage">
+                            <label for="Impossible Sausage">Impossible Sausage</label>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Milk, Wheat, Gluten, MSG <br />
@@ -1652,7 +1681,33 @@
                 $2.19 (355 Cal) <br /> <br />
                 <b>Includes:</b> Buttermilk Biscuit, Choice of Bacon
             </p>
-            <!-- Customization (Bacon) -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Bacon -->
+                <div><b>Bacon</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="BacBis_defaultBacon" type="radio" name="bacon" value="Smoked Bacon">
+                            <label for="Smoked Bacon">Smoked Bacon</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bacon" value="Turkey Bacon">
+                            <label for="Turkey Bacon">Turkey Bacon</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bacon" value="Canadian Bacon">
+                            <label for="Canadian Bacon">Canadian Bacon</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="bacon" value="Veggie Bacon">
+                            <label for="Veggie Bacon">Veggie Bacon</label>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Milk, Wheat, Gluten <br />
@@ -1675,7 +1730,70 @@
                 $2.39 (425 Cal) <br /> <br />
                 <b>Includes:</b> Buttermilk Biscuit, Egg, Cheese
             </p>
-            <!-- Customization -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ECBis_AmCheese" type="radio" name="cheese" value="American Cheese" />
+                            <label for="American Cheese">American Cheese</label>
+                        </td>
+                        <td>
+                            <input id="ECBis_MnJkCheese" type="radio" name="cheese" value="Monterary Jack Cheese" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                        </td>
+                        <td>
+                            <input id="ECBis_None" type="radio" name="cheese" value="None" />
+                            <label for="None">No Cheese</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="ECBis_ACheese" type="checkbox" name="addOns" value="American Cheese" onclick="check_ECBis_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="ECBis_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_MJCheese" type="checkbox" name="addOns" value="Monterey Jack Cheese" onclick="check_ECBis_AddOns()" />
+                            <label for="Monterey Jack Cheese">Monterey Jack Cheese</label>
+                            <input type="number" id="ECBis_MJCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_Egg" type="checkbox" name="addOns" value="Egg" onclick="check_ECBis_AddOns()" />
+                            <label for="Egg">Extra Egg</label>
+                            <input type="number" id="ECBis_EGGquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_ECBis_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="ECBis_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_ECBis_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="ECBis_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_Avocado" type="checkbox" name="addOns" value="Avocado" onclick="check_ECBis_AddOns()" />
+                            <label for="Avocado">Avocados</label>
+                            <input type="number" id="ECBis_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="ECBis_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_ECBis_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="ECBis_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Egg, Soy, Milk, Wheat, Gluten <br />
@@ -1698,7 +1816,90 @@
                 $3.89 (3.89 Cal) <br /> <br />
                 <b>Includes:</b> Buttermilk Biscuit Egg, American Cheese, Choice of Sausage or Bacon
             </p>
-            <!-- Customization -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Protein (Bacon Or Sausage) -->
+                <div><b>Protein (Bacon or Sausage)</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="Bacon">
+                                <input type="radio" name="protein" value="Smoked Bacon"><label for="Smoked Bacon">Smoked Bacon</label>
+                                <input type="radio" name="protein" value="Turkey Bacon"><label for="Turkey Bacon">Turkey Bacon</label>
+                                <input type="radio" name="protein" value="Canadian Bacon"><label for="Canadian Bacon">Canadian Bacon</label>
+                                <input type="radio" name="protein" value="Veggie Bacon"><label for="Veggie Bacon">Veggie Bacon</label>
+                            </div>
+                            <div id="Sausage">
+                                <input id="BisSando_defaultMeat" type="radio" name="protein" value="Pork Sausage"><label for="Pork Sausage">Regular Sausage (Pork)</label>
+                                <input type="radio" name="protein" value="Chicken Sausage"><label for="Chicken Sausage">Chicken Sausage</label>
+                                <input type="radio" name="protein" value="Turkey Sausage"><label for="Turkey Sausage">Turkey Sausage</label>
+                                <input type="radio" name="protein" value="Impossible Sausage"><label for="Impossible Sausage">Impossible Sausage</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Cheese -->
+                <div><b>Cheese</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="BisSando_AmCheese" type="radio" name="cheese" value="American Cheese" />
+                            <label for="American Cheese">American Cheese</label>
+                        </td>
+                        <td>
+                            <input id="BisSando_MnJkCheese" type="radio" name="cheese" value="Monterary Jack Cheese" />
+                            <label for="Monterary Jack Cheese">Monterary Jack Cheese</label>
+                        </td>
+                        <td>
+                            <input id="BisSando_None" type="radio" name="cheese" value="None" />
+                            <label for="None">No Cheese</label>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Egg -->
+                <div><b>Egg</b></div>
+                <input id="BisSando_Egg" type="checkbox" name="addOns" value="Egg" onclick="check_BisSando_AddOns()" />
+                <label for="Egg">Egg</label>
+                <input type="number" id="BisSando_EGGquantity" name="quantity" min="1" max="8" class="quantity">
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="BisSando_ACheese" type="checkbox" name="addOns" value="American Cheese" onclick="check_BisSando_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="BisSando_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BisSando_MJCheese" type="checkbox" name="addOns" value="Monterey Jack Cheese" onclick="check_BisSando_AddOns()" />
+                            <label for="Monterey Jack Cheese">Monterey Jack Cheese</label>
+                            <input type="number" id="BisSando_MJCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BisSando_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_BisSando_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="BisSando_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BisSando_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_BisSando_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="BisSando_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BisSando_Avocado" type="checkbox" name="addOns" value="Avocado" onclick="check_BisSando_AddOns()" />
+                            <label for="Avocado">Avocados</label>
+                            <input type="number" id="BisSando_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BisSando_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_BisSando_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="BisSando_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, MSG, Milk, Wheat, Gluten, Egg <br />
@@ -1721,7 +1922,62 @@
                 $3.99 (945 Cal) <br /> <br />
                 <b>Includes:</b> Pancakes, Choice of Bacon
             </p>
-            <!-- Customization (Bacon) -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Protein (Bacon Or Sausage) -->
+                <div><b>Protein (Bacon or Sausage)</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="Bacon">
+                                <input id="PP_defaultMeat" type="radio" name="protein" value="Smoked Bacon"><label for="Smoked Bacon">Smoked Bacon</label>
+                                <input type="radio" name="protein" value="Turkey Bacon"><label for="Turkey Bacon">Turkey Bacon</label>
+                                <input type="radio" name="protein" value="Canadian Bacon"><label for="Canadian Bacon">Canadian Bacon</label>
+                                <input type="radio" name="protein" value="Veggie Bacon"><label for="Veggie Bacon">Veggie Bacon</label>
+                            </div>
+                            <div id="Sausage">
+                                <input type="radio" name="protein" value="Pork Sausage"><label for="Pork Sausage">Regular Sausage (Pork)</label>
+                                <input type="radio" name="protein" value="Chicken Sausage"><label for="Chicken Sausage">Chicken Sausage</label>
+                                <input type="radio" name="protein" value="Turkey Sausage"><label for="Turkey Sausage">Turkey Sausage</label>
+                                <input type="radio" name="protein" value="Impossible Sausage"><label for="Impossible Sausage">Impossible Sausage</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Egg -->
+                <div><b>Egg</b></div>
+                <input id="PP_Egg" type="checkbox" name="addOns" value="Egg" onclick="check_PP_AddOns()" />
+                <label for="Egg">Scrambled Egg</label>
+                <input type="number" id="PP_EGGquantity" name="quantity" min="1" max="8" class="quantity">
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="PP_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_PP_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="PP_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="PP_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_PP_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="PP_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="PP_Avocado" type="checkbox" name="addOns" value="Avocado" onclick="check_PP_AddOns()" />
+                            <label for="Avocado">Avocados</label>
+                            <input type="number" id="PP_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="PP_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_PP_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="PP_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Egg, Milk, Wheat, Soy, Gluten <br />
@@ -1744,7 +2000,72 @@
                 $4.39 (615 Cal) <br /> <br />
                 <b>Includes:</b> Buttermilk Biscuit, Scrambled Eggs, Choice of Bacon or Sausage
             </p>
-            <!-- Customization (Bacon or Sausage) -->
+            <button id="Customize" class="collapsible">Customize!</button>
+            <div class="itemInfo">
+                <!-- Protein (Bacon Or Sausage) -->
+                <div><b>Protein (Bacon or Sausage)</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <div id="Bacon">
+                                <input id="BP_defaultMeat" type="radio" name="protein" value="Smoked Bacon"><label for="Smoked Bacon">Smoked Bacon</label>
+                                <input type="radio" name="protein" value="Turkey Bacon"><label for="Turkey Bacon">Turkey Bacon</label>
+                                <input type="radio" name="protein" value="Canadian Bacon"><label for="Canadian Bacon">Canadian Bacon</label>
+                                <input type="radio" name="protein" value="Veggie Bacon"><label for="Veggie Bacon">Veggie Bacon</label>
+                            </div>
+                            <div id="Sausage">
+                                <input type="radio" name="protein" value="Pork Sausage"><label for="Pork Sausage">Regular Sausage (Pork)</label>
+                                <input type="radio" name="protein" value="Chicken Sausage"><label for="Chicken Sausage">Chicken Sausage</label>
+                                <input type="radio" name="protein" value="Turkey Sausage"><label for="Turkey Sausage">Turkey Sausage</label>
+                                <input type="radio" name="protein" value="Impossible Sausage"><label for="Impossible Sausage">Impossible Sausage</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Egg -->
+                <div><b>Egg</b></div>
+                <input id="BP_Egg" type="checkbox" name="addOns" value="Egg" onclick="check_BP_AddOns()" />
+                <label for="Egg">Scrambled Egg</label>
+                <input type="number" id="BP_EGGquantity" name="quantity" min="1" max="8" class="quantity">
+                <!-- Add-Ons -->
+                <div><b>Popular Add-Ons</b></div>
+                <table>
+                    <tr>
+                        <td>
+                            <input id="BP_ACheese" type="checkbox" name="addOns" value="American Cheese" onclick="check_BP_AddOns()" />
+                            <label for="American Cheese">American Cheese</label>
+                            <input type="number" id="BP_AMquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BP_MJCheese" type="checkbox" name="addOns" value="Monterey Jack Cheese" onclick="check_BP_AddOns()" />
+                            <label for="Monterey Jack Cheese">Monterey Jack Cheese</label>
+                            <input type="number" id="BP_MJCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BP_Jalapenos" type="checkbox" name="addOns" value="Jalapenos" onclick="check_BP_AddOns()" />
+                            <label for="Jalapenos">Jalapenos</label>
+                            <input type="number" id="BP_JPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BP_GrJalapenos" type="checkbox" name="addOns" value="Grilled Jalapenos" onclick="check_BP_AddOns()" />
+                            <label for="Grilled Jalapenos">Grilled Jalapenos</label>
+                            <input type="number" id="BP_GrJPNquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BP_Avocado" type="checkbox" name="addOns" value="Avocado" onclick="check_BP_AddOns()" />
+                            <label for="Avocado">Avocados</label>
+                            <input type="number" id="BP_AVquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                        <td>
+                            <input id="BP_Chiles" type="checkbox" name="addOns" value="Green Chiles" onclick="check_BP_AddOns()" />
+                            <label for="Green Chiles">Green Chiles</label>
+                            <input type="number" id="BP_GCquantity" name="quantity" min="1" max="8" class="quantity">
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input type="image" src="Resources/btnAddToOrder.png" class="AddButton" onclick="dudClick()" />
+            </div>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
                 <b>Contains:</b> Soy, Milk, Wheat, Gluten, Egg <br />
@@ -1777,10 +2098,22 @@
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
                     <tr>
-                        <td><input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label></td>
+                        <td>
+                            <div>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                            </div>
+                        </td>
                     </tr>
                 </table>
             </p>
@@ -1818,6 +2151,7 @@
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
                     <tr>
+                        <!-- may potentially have to convert to divs -->
                         <td><input type="radio" name="tea" value="Unsweet"><label for="Unsweet">Unsweet Tea</label></td>
                         <td><input type="radio" name="tea" value="Sweet"><label for="Sweet">Sweet Tea</label></td>
                     </tr>

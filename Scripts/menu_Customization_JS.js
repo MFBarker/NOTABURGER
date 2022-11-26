@@ -1340,3 +1340,336 @@ function check_ChS_Sauce() {
         document.getElementById("ChS_BBQ").disabled = true;
     }
 }
+/* BREAKFAST */
+//Egg and Cheese Sandwich
+if (document.getElementById("ECBis_ACheese").checked != true) {
+    document.getElementById("ECBis_AMquantity").value = "";
+    document.getElementById("ECBis_AMquantity").disabled = true;
+}
+if (document.getElementById("ECBis_MJCheese").checked != true) {
+    document.getElementById("ECBis_MJCquantity").value = "";
+    document.getElementById("ECBis_MJCquantity").disabled = true;
+}
+if (document.getElementById("ECBis_Egg").checked != true) {
+    document.getElementById("ECBis_EGGquantity").value = "";
+    document.getElementById("ECBis_EGGquantity").disabled = true;
+}
+if (document.getElementById("ECBis_Jalapenos").checked != true) {
+    document.getElementById("ECBis_JPNquantity").value = "";
+    document.getElementById("ECBis_JPNquantity").disabled = true;
+}
+if (document.getElementById("ECBis_GrJalapenos").checked != true) {
+    document.getElementById("ECBis_GrJPNquantity").value = "";
+    document.getElementById("ECBis_GrJPNquantity").disabled = true;
+}
+if (document.getElementById("ECBis_Avocado").checked != true) {
+    document.getElementById("ECBis_AVquantity").value = "";
+    document.getElementById("ECBis_AVquantity").disabled = true;
+}
+if (document.getElementById("ECBis_Chiles").checked != true) {
+    document.getElementById("ECBis_GCquantity").value = "";
+    document.getElementById("ECBis_GCquantity").disabled = true;
+}
+function check_ECBis_AddOns() {
+    /* SELECT */
+    if (document.getElementById("ECBis_ACheese").checked == true) {
+        document.getElementById("ECBis_AMquantity").value = "1";
+        document.getElementById("ECBis_AMquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_MJCheese").checked == true) {
+        document.getElementById("ECBis_MJCquantity").value = "1";
+        document.getElementById("ECBis_MJCquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_Egg").checked == true) {
+        document.getElementById("ECBis_EGGquantity").value = "1";
+        document.getElementById("ECBis_EGGquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_Jalapenos").checked == true) {
+        document.getElementById("ECBis_JPNquantity").value = "1";
+        document.getElementById("ECBis_JPNquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_GrJalapenos").checked == true) {
+        document.getElementById("ECBis_GrJPNquantity").value = "1";
+        document.getElementById("ECBis_GrJPNquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_Avocado").checked == true) {
+        document.getElementById("ECBis_AVquantity").value = "1";
+        document.getElementById("ECBis_AVquantity").disabled = false;
+    }
+    if (document.getElementById("ECBis_Chiles").checked == true) {
+        document.getElementById("ECBis_GCquantity").value = "1";
+        document.getElementById("ECBis_GCquantity").disabled = false;
+    }
+    /* DESELECT */
+    if (document.getElementById("ECBis_ACheese").checked != true) {
+        document.getElementById("ECBis_AMquantity").value = "";
+        document.getElementById("ECBis_AMquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_MJCheese").checked != true) {
+        document.getElementById("ECBis_MJCquantity").value = "";
+        document.getElementById("ECBis_MJCquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_Egg").checked != true) {
+        document.getElementById("ECBis_EGGquantity").value = "";
+        document.getElementById("ECBis_EGGquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_Jalapenos").checked != true) {
+        document.getElementById("ECBis_JPNquantity").value = "";
+        document.getElementById("ECBis_JPNquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_GrJalapenos").checked != true) {
+        document.getElementById("ECBis_GrJPNquantity").value = "";
+        document.getElementById("ECBis_GrJPNquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_Avocado").checked != true) {
+        document.getElementById("ECBis_AVquantity").value = "";
+        document.getElementById("ECBis_AVquantity").disabled = true;
+    }
+    if (document.getElementById("ECBis_Chiles").checked != true) {
+        document.getElementById("ECBis_GCquantity").value = "";
+        document.getElementById("ECBis_GCquantity").disabled = true;
+    }
+}
+//Biscuit Sandwich
+if (document.getElementById("BisSando_ACheese").checked != true) {
+    document.getElementById("BisSando_AMquantity").value = "";
+    document.getElementById("BisSando_AMquantity").disabled = true;
+}
+if (document.getElementById("BisSando_MJCheese").checked != true) {
+    document.getElementById("BisSando_MJCquantity").value = "";
+    document.getElementById("BisSando_MJCquantity").disabled = true;
+}
+if (document.getElementById("BisSando_Egg").checked != true) {
+    document.getElementById("BisSando_EGGquantity").value = "";
+    document.getElementById("BisSando_EGGquantity").disabled = true;
+} else if (document.getElementById("BisSando_Egg").checked == true) { document.getElementById("BisSando_EGGquantity").value = "1"; }
+if (document.getElementById("BisSando_Jalapenos").checked != true) {
+    document.getElementById("BisSando_JPNquantity").value = "";
+    document.getElementById("BisSando_JPNquantity").disabled = true;
+}
+if (document.getElementById("BisSando_GrJalapenos").checked != true) {
+    document.getElementById("BisSando_GrJPNquantity").value = "";
+    document.getElementById("BisSando_GrJPNquantity").disabled = true;
+}
+if (document.getElementById("BisSando_Avocado").checked != true) {
+    document.getElementById("BisSando_AVquantity").value = "";
+    document.getElementById("BisSando_AVquantity").disabled = true;
+}
+if (document.getElementById("BisSando_Chiles").checked != true) {
+    document.getElementById("BisSando_GCquantity").value = "";
+    document.getElementById("BisSando_GCquantity").disabled = true;
+}
+function check_BisSando_AddOns() {
+    /* SELECT */
+    if (document.getElementById("BisSando_ACheese").checked == true) {
+        document.getElementById("BisSando_AMquantity").value = "1";
+        document.getElementById("BisSando_AMquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_MJCheese").checked == true) {
+        document.getElementById("BisSando_MJCquantity").value = "1";
+        document.getElementById("BisSando_MJCquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_Egg").checked == true) {
+        document.getElementById("BisSando_EGGquantity").value = "1";
+        document.getElementById("BisSando_EGGquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_Jalapenos").checked == true) {
+        document.getElementById("BisSando_JPNquantity").value = "1";
+        document.getElementById("BisSando_JPNquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_GrJalapenos").checked == true) {
+        document.getElementById("BisSando_GrJPNquantity").value = "1";
+        document.getElementById("BisSando_GrJPNquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_Avocado").checked == true) {
+        document.getElementById("BisSando_AVquantity").value = "1";
+        document.getElementById("BisSando_AVquantity").disabled = false;
+    }
+    if (document.getElementById("BisSando_Chiles").checked == true) {
+        document.getElementById("BisSando_GCquantity").value = "1";
+        document.getElementById("BisSando_GCquantity").disabled = false;
+    }
+    /* DESELECT */
+    if (document.getElementById("BisSando_ACheese").checked != true) {
+        document.getElementById("BisSando_AMquantity").value = "";
+        document.getElementById("BisSando_AMquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_MJCheese").checked != true) {
+        document.getElementById("BisSando_MJCquantity").value = "";
+        document.getElementById("BisSando_MJCquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_Egg").checked != true) {
+        document.getElementById("BisSando_EGGquantity").value = "";
+        document.getElementById("BisSando_EGGquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_Jalapenos").checked != true) {
+        document.getElementById("BisSando_JPNquantity").value = "";
+        document.getElementById("BisSando_JPNquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_GrJalapenos").checked != true) {
+        document.getElementById("BisSando_GrJPNquantity").value = "";
+        document.getElementById("BisSando_GrJPNquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_Avocado").checked != true) {
+        document.getElementById("BisSando_AVquantity").value = "";
+        document.getElementById("BisSando_AVquantity").disabled = true;
+    }
+    if (document.getElementById("BisSando_Chiles").checked != true) {
+        document.getElementById("BisSando_GCquantity").value = "";
+        document.getElementById("BisSando_GCquantity").disabled = true;
+    }
+}
+//Pancake Platter
+if (document.getElementById("PP_Egg").checked != true) {
+    document.getElementById("PP_EGGquantity").value = "";
+    document.getElementById("PP_EGGquantity").disabled = true;
+}
+if (document.getElementById("PP_Jalapenos").checked != true) {
+    document.getElementById("PP_JPNquantity").value = "";
+    document.getElementById("PP_JPNquantity").disabled = true;
+}
+if (document.getElementById("PP_GrJalapenos").checked != true) {
+    document.getElementById("PP_GrJPNquantity").value = "";
+    document.getElementById("PP_GrJPNquantity").disabled = true;
+}
+if (document.getElementById("PP_Avocado").checked != true) {
+    document.getElementById("PP_AVquantity").value = "";
+    document.getElementById("PP_AVquantity").disabled = true;
+}
+if (document.getElementById("PP_Chiles").checked != true) {
+    document.getElementById("PP_GCquantity").value = "";
+    document.getElementById("PP_GCquantity").disabled = true;
+}
+function check_PP_AddOns() {
+    /* SELECT */
+    if (document.getElementById("PP_Egg").checked == true) {
+        document.getElementById("PP_EGGquantity").value = "1";
+        document.getElementById("PP_EGGquantity").disabled = false;
+    }
+    if (document.getElementById("PP_Jalapenos").checked == true) {
+        document.getElementById("PP_JPNquantity").value = "1";
+        document.getElementById("PP_JPNquantity").disabled = false;
+    }
+    if (document.getElementById("PP_GrJalapenos").checked == true) {
+        document.getElementById("PP_GrJPNquantity").value = "1";
+        document.getElementById("PP_GrJPNquantity").disabled = false;
+    }
+    if (document.getElementById("PP_Avocado").checked == true) {
+        document.getElementById("PP_AVquantity").value = "1";
+        document.getElementById("PP_AVquantity").disabled = false;
+    }
+    if (document.getElementById("PP_Chiles").checked == true) {
+        document.getElementById("PP_GCquantity").value = "1";
+        document.getElementById("PP_GCquantity").disabled = false;
+    }
+    /* DESELECT */
+    if (document.getElementById("PP_Egg").checked != true) {
+        document.getElementById("PP_EGGquantity").value = "";
+        document.getElementById("PP_EGGquantity").disabled = true;
+    }
+    if (document.getElementById("PP_Jalapenos").checked != true) {
+        document.getElementById("PP_JPNquantity").value = "";
+        document.getElementById("PP_JPNquantity").disabled = true;
+    }
+    if (document.getElementById("PP_GrJalapenos").checked != true) {
+        document.getElementById("PP_GrJPNquantity").value = "";
+        document.getElementById("PP_GrJPNquantity").disabled = true;
+    }
+    if (document.getElementById("PP_Avocado").checked != true) {
+        document.getElementById("PP_AVquantity").value = "";
+        document.getElementById("PP_AVquantity").disabled = true;
+    }
+    if (document.getElementById("PP_Chiles").checked != true) {
+        document.getElementById("PP_GCquantity").value = "";
+        document.getElementById("PP_GCquantity").disabled = true;
+    }
+}
+//Breakfast Platter
+if (document.getElementById("BP_ACheese").checked != true) {
+    document.getElementById("BP_AMquantity").value = "";
+    document.getElementById("BP_AMquantity").disabled = true;
+}
+if (document.getElementById("BP_MJCheese").checked != true) {
+    document.getElementById("BP_MJCquantity").value = "";
+    document.getElementById("BP_MJCquantity").disabled = true;
+}
+if (document.getElementById("BP_Egg").checked != true) {
+    document.getElementById("BP_EGGquantity").value = "";
+    document.getElementById("BP_EGGquantity").disabled = true;
+} else if (document.getElementById("BP_Egg").checked == true) { document.getElementById("BP_EGGquantity").value = "1"; }
+if (document.getElementById("BP_Jalapenos").checked != true) {
+    document.getElementById("BP_JPNquantity").value = "";
+    document.getElementById("BP_JPNquantity").disabled = true;
+}
+if (document.getElementById("BP_GrJalapenos").checked != true) {
+    document.getElementById("BP_GrJPNquantity").value = "";
+    document.getElementById("BP_GrJPNquantity").disabled = true;
+}
+if (document.getElementById("BP_Avocado").checked != true) {
+    document.getElementById("BP_AVquantity").value = "";
+    document.getElementById("BP_AVquantity").disabled = true;
+}
+if (document.getElementById("BP_Chiles").checked != true) {
+    document.getElementById("BP_GCquantity").value = "";
+    document.getElementById("BP_GCquantity").disabled = true;
+}
+function check_BP_AddOns() {
+    /* SELECT */
+    if (document.getElementById("BP_ACheese").checked == true) {
+        document.getElementById("BP_AMquantity").value = "1";
+        document.getElementById("BP_AMquantity").disabled = false;
+    }
+    if (document.getElementById("BP_MJCheese").checked == true) {
+        document.getElementById("BP_MJCquantity").value = "1";
+        document.getElementById("BP_MJCquantity").disabled = false;
+    }
+    if (document.getElementById("BP_Egg").checked == true) {
+        document.getElementById("BP_EGGquantity").value = "1";
+        document.getElementById("BP_EGGquantity").disabled = false;
+    }
+    if (document.getElementById("BP_Jalapenos").checked == true) {
+        document.getElementById("BP_JPNquantity").value = "1";
+        document.getElementById("BP_JPNquantity").disabled = false;
+    }
+    if (document.getElementById("BP_GrJalapenos").checked == true) {
+        document.getElementById("BP_GrJPNquantity").value = "1";
+        document.getElementById("BP_GrJPNquantity").disabled = false;
+    }
+    if (document.getElementById("BP_Avocado").checked == true) {
+        document.getElementById("BP_AVquantity").value = "1";
+        document.getElementById("BP_AVquantity").disabled = false;
+    }
+    if (document.getElementById("BP_Chiles").checked == true) {
+        document.getElementById("BP_GCquantity").value = "1";
+        document.getElementById("BP_GCquantity").disabled = false;
+    }
+    /* DESELECT */
+    if (document.getElementById("BP_ACheese").checked != true) {
+        document.getElementById("BP_AMquantity").value = "";
+        document.getElementById("BP_AMquantity").disabled = true;
+    }
+    if (document.getElementById("BP_MJCheese").checked != true) {
+        document.getElementById("BP_MJCquantity").value = "";
+        document.getElementById("BP_MJCquantity").disabled = true;
+    }
+    if (document.getElementById("BP_Egg").checked != true) {
+        document.getElementById("BP_EGGquantity").value = "";
+        document.getElementById("BP_EGGquantity").disabled = true;
+    }
+    if (document.getElementById("BP_Jalapenos").checked != true) {
+        document.getElementById("BP_JPNquantity").value = "";
+        document.getElementById("BP_JPNquantity").disabled = true;
+    }
+    if (document.getElementById("BP_GrJalapenos").checked != true) {
+        document.getElementById("BP_GrJPNquantity").value = "";
+        document.getElementById("BP_GrJPNquantity").disabled = true;
+    }
+    if (document.getElementById("BP_Avocado").checked != true) {
+        document.getElementById("BP_AVquantity").value = "";
+        document.getElementById("BP_AVquantity").disabled = true;
+    }
+    if (document.getElementById("BP_Chiles").checked != true) {
+        document.getElementById("BP_GCquantity").value = "";
+        document.getElementById("BP_GCquantity").disabled = true;
+    }
+}

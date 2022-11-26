@@ -66,6 +66,20 @@ document.getElementById("CT_Gravy").checked = true;
 document.getElementById("Fries_M").checked = true;
 document.getElementById("OnRings_M").checked = true;
 /* Breakfast */
+//Sausage Biscuit and Bacon Biscuit
+document.getElementById("SauBis_defaultSausage").checked = true;
+document.getElementById("BacBis_defaultBacon").checked = true;
+//Egg and Cheese Biscuit
+document.getElementById("ECBis_AmCheese").checked = true;
+//Biscuit Sandwich
+document.getElementById("BisSando_defaultMeat").checked = true;
+document.getElementById("BisSando_AmCheese").checked = true;
+document.getElementById("BisSando_Egg").checked = true;
+//Pancake Platter
+document.getElementById("PP_defaultMeat").checked = true;
+//Breakfast Platter
+document.getElementById("BP_defaultMeat").checked = true;
+document.getElementById("BP_Egg").checked = true;
 /* Drinks and Shakes */
 document.getElementById("Soda_M").checked = true;
 document.getElementById("Coffee_M").checked = true;
