@@ -40,7 +40,26 @@ header {
     text-transform: uppercase;
 }
 
+.mainHomepage {
+
+    width: 85%;
+    text-align: center;
+    padding: 0px;
+    margin-left: 125px;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.middleList{
+    width: 14%;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+    display: inline-block;
+}
+
 .bottomMenu {
+
     width: 12%;
     text-align: center;
     padding: 0px;
@@ -49,12 +68,12 @@ header {
     float: left;
 }
 
+
 footer {
     padding: 0px;
     border: 1px;
     border-color: #333;
     width: 100%;
-    margin-top: -70px;
     background-color: #333;
     color: white;
     font-family: 'whatafont_expandedexpanded';
@@ -69,6 +88,10 @@ nav a:visited {
     color: white;
 }
 
+.contentHome {
+    min-height: 120%;
+    margin-top: 190px;
+}
 .content{
     min-height: 100%;
     margin-top: 190px;
@@ -97,6 +120,15 @@ button {
     width: 90%;
     margin-left: 8%;
     text-align: left;
+    padding-left: 100px;
+    font-family: 'whatafont_expandedexpanded';
+    padding: 36px 0 32px;
+}
+
+.table2 {
+    width: 90%;
+    margin-left: 8%;
+    text-align: center;
     padding-left: 100px;
     font-family: 'whatafont_expandedexpanded';
     padding: 36px 0 32px;
