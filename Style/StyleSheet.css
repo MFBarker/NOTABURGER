@@ -200,7 +200,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: cornflowerblue
+    background-color: cornflowerblue;
+    border: 5px double white;
 }
 
 .careers {
