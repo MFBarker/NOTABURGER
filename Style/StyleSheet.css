@@ -220,5 +220,29 @@ body {
     align-content: baseline;
 }
 
+.center {
+    text-align: center;
+}
 
+.columns{
+    columns: 4;
 
+}
+
+.center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornflowerblue
+}
+
+.careers {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.box_{
+    background-color:cornflowerblue;
+    margin:10%;
+    border: double 10px white;
+}
