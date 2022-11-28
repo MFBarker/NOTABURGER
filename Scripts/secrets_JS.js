@@ -34,8 +34,30 @@ function SearchBar() {
             window.location.href = 'secretMenu.html';
 
         }
-        else {
-            alert("Sorry still under construction!");
+
+        if (input == "community" || input == "Community")
+        {
+            window.location.href = 'community.html';
+        }
+
+        if(input == "stories" || input == "Stories")
+        {
+            window.location.href = 'stories.html';
+        }
+
+        if (input == "menu" || input == "Menu")
+        {
+            window.location.href = 'menu.html';
+        }
+
+        if (input == "careers" || input == "Careers")
+        {
+            window.location.href = 'careers.html';
+        }
+
+        if (input == "locations" || input == "Locations")
+        {
+            window.location.href = 'locations.html';
         }
 
     });
