@@ -103,11 +103,11 @@ function addClick() {
     addMenu.classList.toggle("active");
     if (B.checked == 1 && K.checked == 1 && F.checked == 1 && L.checked == 1) {
         console.log("Number 15");
-        secret.textContent = "Code Goes Here";
+        secret.textContent = "4.) RJET-H93B-R2NB-CG99";
     }
     else if (J.checked == 1 && B.checked == 1 && F.checked == 1 && T.checked == 1) {
         console.log("Delicious");
-        secret.textContent = "Code Goes Here";
+        secret.textContent = "4.) RJET-H93B-R2NB-CG99";
     }
     else { console.log("click"); }
 }
