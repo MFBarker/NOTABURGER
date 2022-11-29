@@ -16,6 +16,14 @@ function Programs(evt, programName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+function Hidden_HomePage() {
+    const bttonIG = document.getElemntById("igBttn");
+    bttonIG.addEventListener('click', function () {
+        document.getElementById('secretIg').innerText = ""
+    });
+}
+
+
 /* Hiding codes */
 function Hidden_() {
     const button_ = document.getElementById('button_');
@@ -32,6 +40,8 @@ function Hidden_Careers() {
         document.getElementById("employee3").src = "Resources/Employee(3)Edit.png"
         document.getElementById("employee4").src = "Resources/Employee(4)Edit.png"
         document.getElementById("employee5").src = "Resources/Employee(5)Edit.png"
+
+        document.getElementById("employee1").innerText = "Help";
     } 
 
     
