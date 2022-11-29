@@ -233,8 +233,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: cornflowerblue;
-    border: 5px double white;
+    background-color: #037CA4;
+    border: 5px double #FE5904;
 }
 
 .careers {
@@ -242,8 +242,8 @@ body {
     text-decoration: underline;
 }
 
-.box_{
-    background-color:cornflowerblue;
-    margin:10%;
-    border: double 10px white;
+.box_ {
+    background-color: #037CA4;
+    margin: 10%;
+    border: double 10px #FE5904;
 }
