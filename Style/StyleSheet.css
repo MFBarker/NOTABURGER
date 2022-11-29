@@ -172,6 +172,7 @@ button {
     padding: 10px 25px;
     border-radius: 8px;
     text-decoration: underline;
+    text-decoration-color: white;
     position: absolute;
     left: 11%;
     top: 270.5%;
