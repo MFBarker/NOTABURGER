@@ -150,3 +150,11 @@ td {
 .quantity {
     width: fit-content;
 }
+
+#SecMenuHead {
+    background-color: #7f86be;
+}
+
+#SecMenuBody {
+    background-color: #686868;
+}
