@@ -46,6 +46,10 @@ button
     margin-bottom: 5px;
     font-family: "Comic Sans MS", sans-serif, serif;
     width: max-content;
+    /* Center Align */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -76,9 +80,13 @@ button
 }
 
 .item {
-    margin-bottom: 5px;
     height: fit-content;
+    margin-bottom: 5px;
     width: 350px;
+    /* Center Align */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 td {
