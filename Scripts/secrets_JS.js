@@ -24,6 +24,17 @@ function Hidden_() {
     });
 }
 
+function Hidden_Careers() {
+    if (document.getElementById("imgClickChange").src = "Resources/Victim2_.png") {
+        document.getElementById("imgClickChange").src = "Resources/Victim2Edit.png"
+        document.getElementById("employee1").src = "Resources/Employee(1)Edit.png"
+        document.getElementById("employee2").src = "Resources/Employee(2)Edit.png"
+        document.getElementById("employee3").src = "Resources/Employee(3)Edit.png"
+    } 
+
+    
+}
+
 
 function SearchBar() {
     const input = document.getElementById('searchBar').value;
