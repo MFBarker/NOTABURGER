@@ -19,7 +19,7 @@ document.getElementById("defaultOpen").click();
 function Hidden_HomePage() {
     const bttonIG = document.getElemntById("igBttn");
     bttonIG.addEventListener('click', function () {
-        document.getElementById('secretIg').innerText = ""
+        document.getElementById('secretIg').innerText = "3.) H568-2QTB-KVWY-379L";
     });
 }
 
