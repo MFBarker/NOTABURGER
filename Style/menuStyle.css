@@ -158,3 +158,6 @@ td {
 #SecMenuBody {
     background-color: #686868;
 }
+.rotate_image {
+    transform: scaleX(-1);
+}
