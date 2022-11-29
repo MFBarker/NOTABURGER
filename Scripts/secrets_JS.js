@@ -30,6 +30,8 @@ function Hidden_Careers() {
         document.getElementById("employee1").src = "Resources/Employee(1)Edit.png"
         document.getElementById("employee2").src = "Resources/Employee(2)Edit.png"
         document.getElementById("employee3").src = "Resources/Employee(3)Edit.png"
+        document.getElementById("employee4").src = "Resources/Employee(4)Edit.png"
+        document.getElementById("employee5").src = "Resources/Employee(5)Edit.png"
     } 
 
     
