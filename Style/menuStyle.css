@@ -66,7 +66,6 @@ button {
     margin-bottom: 5px;
     font-family: "Comic Sans MS", sans-serif, serif;
     width: max-content;
-    /* Center Align */
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -101,10 +100,7 @@ button {
     height: fit-content;
     margin-bottom: 5px;
     width: 350px;
-    /* Center Align */
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+    
 }
 
 td {
@@ -175,4 +171,20 @@ td {
 
 #SecMenuBody {
     background-color: #686868;
+}
+.rotate_image {
+    transform: scaleX(-1);
+}
+.center {
+    /* Center Align */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centerTable {
+    /* Center Align */
+    display: block;
+    margin-right: auto;
+    margin-left: 7%;
 }
