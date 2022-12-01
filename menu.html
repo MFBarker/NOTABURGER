@@ -53,7 +53,7 @@
                 <table>
                     <tr>
                         <td>
-                            <input id="TB_defaultBread" type="radio" name="bread" value="Large Bun">
+                            <input id="TB_LargeBun" type="radio" name="bread" value="Large Bun">
                             <label for="Large Bun">Large Bun</label>
                         </td>
                         <td>
@@ -1558,7 +1558,7 @@
 
         <!-- Breakfast -->
         <div class="catName">Breakfast</div>
-        <button id="Pancakes" type="button" class="collapsible item center">Pancakes</button>
+        <input type="image" src="Resources/Menu Pictures/Pancakes.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $3.19 (630 Cal) <br /> <br />
@@ -1581,7 +1581,7 @@
             </div>
         </div>
 
-        <button id="Hashbrowns" type="button" class="collapsible item center">HashBrowns</button>
+        <input type="image" src="Resources/Menu Pictures/Hashbrowns.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $3.19 (630 Cal) <br /> <br />
@@ -1604,7 +1604,7 @@
             </div>
         </div>
 
-        <button id="Biscuit" type="button" class="collapsible item center">Biscuit</button>
+        <input type="image" src="Resources/Menu Pictures/Biscuit.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $1.29 (290 Cal) <br /> <br />
@@ -1627,7 +1627,7 @@
             </div>
         </div>
 
-        <button id="SausageBiscuit" type="button" class="collapsible item center">Sausage Biscuit</button>
+        <input type="image" src="Resources/Menu Pictures/SausageBiscuit.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $2.19 (520 Cal) <br /> <br />
@@ -1676,7 +1676,7 @@
             </div>
         </div>
 
-        <button id="BaconBiscuit" type="button" class="collapsible item center">Bacon Biscuit</button>
+        <input type="image" src="Resources/Menu Pictures/BaconBiscuit.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $2.19 (355 Cal) <br /> <br />
@@ -1725,7 +1725,7 @@
             </div>
         </div>
 
-        <button id="E&CBiscuit" type="button" class="collapsible item center">Egg and Cheese Biscuit</button>
+        <input type="image" src="Resources/Menu Pictures/EggCheeseBiscuit.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $2.39 (425 Cal) <br /> <br />
@@ -1811,7 +1811,7 @@
             </div>
         </div>
 
-        <button id="BiscuitSando" type="button" class="collapsible item center">Biscuit Sandwich</button>
+        <input type="image" src="Resources/Menu Pictures/BiscuitSandwich.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $3.89 (3.89 Cal) <br /> <br />
@@ -1917,7 +1917,7 @@
             </div>
         </div>
 
-        <button id="PnCkPlatter" type="button" class="collapsible item center">Pancake Platter</button>
+        <input type="image" src="Resources/Menu Pictures/PancakePlatter.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $3.99 (945 Cal) <br /> <br />
@@ -1995,7 +1995,7 @@
             </div>
         </div>
 
-        <button id="BkfstPlatter" type="button" class="collapsible item center">Breakfast Platter</button>
+        <input type="image" src="Resources/Menu Pictures/BreakfastPlatter.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 $4.39 (615 Cal) <br /> <br />
@@ -2086,34 +2086,42 @@
         <!-- Drinks and Shakes -->
         <div class="catName">Drinks and Shakes</div>
 
-        <button id="SoftDrink" type="button" class="collapsible item center">Soft Drink</button>
+        <input type="image" src="Resources/Menu Pictures/Soda.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 <table>
                     <tr> <td> <b>Sizes:</b> </td></tr>
                     <tr>
-                        <td><input type="radio" name="size-K" value="Kids"><label for="Kids">Kids (16 oz): $1.69 (0-220 Cal)</label></td>
-                        <td><input type="radio" name="size-S" value="Small"><label for="Small">Small (20 oz): $2.19 (0-280 Cal)</label></td>
-                        <td><input type="radio" id="Soda_M" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (0-440 Cal)</label></td>
-                        <td><input type="radio" name="size-L" value="Large"><label for="Large">Large (44 oz): $2.79 (0-610 Cal)</label></td>
+                        <td>
+                            <div>
+                                <input type="radio" name="size-K" value="Kids"><label for="Kids">Kids (16 oz): $1.69 (0-220 Cal)</label>
+                                <input type="radio" name="size-S" value="Small"><label for="Small">Small (20 oz): $2.19 (0-280 Cal)</label>
+                                <input type="radio" id="Soda_M" name="size-M" value="Medium"><label for="Medium">Medium (32 oz): $2.49 (0-440 Cal)</label>
+                                <input type="radio" name="size-L" value="Large"><label for="Large">Large (44 oz): $2.79 (0-610 Cal)</label>
+                            </div>
+                        </td>
                     </tr>
                     <tr> <td> <b>Flavors:</b> </td> </tr>
                     <tr>
                         <!-- AMOGUS -->
                         <td>
                             <div>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R1</label>
+                                <input type="radio" name="soda" value="Coke"><label for="Coke">Coca-Cola</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Diet Coke</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Coke Zero</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Pepsi</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Root Beer</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Orange Fanta</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Strawberry Fanta</label>
                             </div>
                             <div>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
-                                <input type="radio" name="soda" value="WIP"><label for="WIP">WIP R2</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Sierra Mist</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Dr. Pepper</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Mtn. Dew</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Sprite</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Grass Soda</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Fruit Punch</label>
+                                <input type="radio" name="soda" value="WIP"><label for="WIP">Lemonade</label>
                             </div>
                         </td>
                     </tr>
@@ -2122,7 +2130,7 @@
             </p>
         </div>
 
-        <button id="Coffee" type="button" class="collapsible item center">Coffee</button>
+        <input type="image" src="Resources/Menu Pictures/Coffee.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 <table>
@@ -2142,7 +2150,7 @@
             </p>
         </div>
 
-        <button id="Tea" type="button" class="collapsible item center">Tea</button>
+        <input type="image" src="Resources/Menu Pictures/Tea.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
                 <table>
@@ -2158,13 +2166,14 @@
                         <!-- may potentially have to convert to divs -->
                         <td><input type="radio" name="tea" value="Unsweet"><label for="Unsweet">Unsweet Tea</label></td>
                         <td><input type="radio" name="tea" value="Sweet"><label for="Sweet">Sweet Tea</label></td>
+                        <td><input type="radio" name="tea" value="Sweet"><label for="Sweet">Half-Sweet Half-Unsweet Tea</label></td>
                     </tr>
                 </table>
                 <input type="image" src="Resources/btnAddToOrder.png" class="AddButton center" onclick="dudClick()" />
             </p>
         </div>
 
-        <button id="Shakes" type="button" class="collapsible item center">Shakes</button>
+        <input type="image" src="Resources/Menu Pictures/Shakes.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p>
                 <div><b>Contains:</b> Milk </div>
@@ -2185,7 +2194,7 @@
                 <input type="image" src="Resources/btnAddToOrder.png" class="AddButton center" onclick="dudClick()" />
             </p>
         </div>
-        <button id="Milk" type="button" class="collapsible item center">Milk</button>
+        <input type="image" src="Resources/Menu Pictures/Milk.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <table>
                 <tr><td><b>Milk:</b></td></tr>
@@ -2201,41 +2210,54 @@
             <input type="image" src="Resources/btnAddToOrder.png" class="AddButton center" onclick="dudClick()" />
         </div>
         <!-- Dessert -->
-        <div class="catName">Dessert</div>
-        <button id="Soy Sauce" type="button" class="collapsible item center">Soy Sauce (WIP)</button>
+        <div class="catName">Desserts</div>
+        <input type="image" src="Resources/Menu Pictures/SoySauce.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
-                $1.79 (--- Cal) <br />
-                <b>Includes:</b> sss <br />
+                $2.69 (343 Cal.)
+                <b>Includes:</b> SoySauce Creme Caramel
             </p>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
-                <b>Contains:</b> Meat <br />
-                <table>
-                    <tr> <td> <b>Nutritional Facts:</b> </td> </tr>
-                    <tr> <td> [REDACTED] </td> </tr>
-                </table>
+                <b>Contains:</b> Soy, Milk, Egg <br />
+
+                <b>Nutritional Facts:</b>
+                <div class="shrinkText">
+                    <table class="nutTable">
+                        <tr> <td>Calories: 343</td>           <td>Calories from Fat: 97</td>   <td>Saturated Fat (g): 3</td> </tr>
+                        <tr> <td>Trans Fat (g): 0</td>        <td>Cholesterol (g): 0</td>       <td>Sodium (mg): 101</td> </tr>
+                        <tr> <td>Dietary Fiber (g): 0</td>    <td>Protein (g): 7</td>           <td>Sugars (g): 35</td> </tr>
+                    </table>
+                    <br />
+                </div>
             </div>
             <input type="image" src="Resources/btnAddToOrder.png" class="AddButton center" onclick="dudClick()" />
         </div>
-        <button id="Mayo" type="button" class="collapsible item center">Mayo (WIP)</button>
+        <input type="image" src="Resources/Menu Pictures/MayoCustard.png" class="collapsible item center" padding="0px" margin="0px" />
         <div class="itemInfo">
             <p id="Prices">
-                $1.79 (--- Cal) <br />
-                <b>Includes:</b>  <br />
+                $2.69 (203 Cal.)
+                <b>Includes:</b> Creamy Mayo Custard
             </p>
             <button id="NutFacts" class="collapsible">Nutritional Information</button>
             <div class="itemInfo">
-                <b>Contains:</b> Meat <br />
-                <table>
-                    <tr> <td> <b>Nutritional Facts:</b> </td> </tr>
-                    <tr> <td> [REDACTED] </td> </tr>
-                </table>
+                <b>Contains:</b> Egg, Milk <br />
+
+                <b>Nutritional Facts:</b>
+                <div class="shrinkText">
+                    <table class="nutTable">
+                        <tr> <td>Calories: 203</td>           <td>Calories from Fat: 97</td>   <td>Saturated Fat (g): 3</td> </tr>
+                        <tr> <td>Trans Fat (g): 0</td>        <td>Cholesterol (g): 0</td>       <td>Sodium (mg): 121</td> </tr>
+                        <tr> <td>Dietary Fiber (g): 0</td>    <td>Protein (g): 6</td>           <td>Sugars (g): 7</td> </tr>
+                    </table>
+                    <br />
+                </div>
             </div>
             <input type="image" src="Resources/btnAddToOrder.png" class="AddButton center" onclick="dudClick()" />
         </div>
+
         <div>
-            <div id="secret"></div> <br /><br /><br /><br /><br />
+            <br /><br /><div id="secret"></div> <br /><br /><br />
         </div>
     </section>
     <footer padding-top="10px">

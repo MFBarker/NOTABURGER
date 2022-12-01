@@ -16,7 +16,7 @@ for (i = 0; i < coll.length; i++) {
 
 /* Burgers by default */
 //Turkey Burger
-document.getElementById("TB_defaultBread").checked = true;
+document.getElementById("TB_LargeBun").checked = true;
 document.getElementById("TB_patty").checked = true;
 document.getElementById("TB_TomatoS").checked = true;
 document.getElementById("TB_pickles").checked = true;
