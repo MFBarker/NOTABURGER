@@ -1,13 +1,32 @@
 ﻿@charset "UTF-8";
+/* FONTS */
+@font-face {
+    font-family: NotAFont2;
+    src: url('whatafont/whata2.ttf');
+}
 
-button 
-{
+@font-face {
+    font-family: NotAFont2e;
+    src: url('whatafont/whata2e.ttf');
+}
+
+@font-face {
+    font-family: NotAFont2i;
+    src: url('whatafont/whata2i.ttf');
+}
+
+@font-face {
+    font-family: NotAFont2s;
+    src: url('whatafont/whata2s.ttf');
+}
+
+
+button {
     margin-bottom: 10px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
-.collapsible
-{
+.collapsible {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -18,18 +37,19 @@ button
     outline: none;
     font-size: 15px;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover
-{
-    background-color: #ccc;
-}
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+        background-color: #ccc;
+    }
+
+    .collapsible:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+    }
+
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
@@ -53,8 +73,7 @@ button
 }
 
 
-.active:after 
-{
+.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
@@ -69,13 +88,11 @@ button
     max-height: auto;
 }
 
-.shrinkText 
-{
+.shrinkText {
     font-size: 9.5px;
 }
 
-.nutTable 
-{
+.nutTable {
     font-size: 10px;
     text-align: left;
 }
@@ -110,9 +127,10 @@ td {
     outline: none;
     border-radius: 0px;
 }
-.active, .amount:hover {
-    background-color: #ccc;
-}
+
+    .active, .amount:hover {
+        background-color: #ccc;
+    }
 
 .numDisplay {
     height: 26px;
@@ -130,7 +148,7 @@ td {
 }
 
 .spacer {
-    margin-top:200px;
+    margin-top: 200px;
 }
 
 .AddButton {

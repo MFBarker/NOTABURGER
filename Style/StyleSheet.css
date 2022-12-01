@@ -1,17 +1,26 @@
-﻿/* Testing fonts*/
-@font-face
-{
-    font-family: Whata;
-    src: url(Resources/whatafont/whata2.tff) format('truetype');
+﻿/* FONTS */
+@font-face {
+    font-family: NotAFont2;
+    src: url('whatafont/whata2.ttf');
 }
-.FontMarket
-{
-    font-family: Whata;
+
+@font-face {
+    font-family: NotAFont2e;
+    src: url('whatafont/whata2e.ttf');
+}
+
+@font-face {
+    font-family: NotAFont2i;
+    src: url('whatafont/whata2i.ttf');
+}
+
+@font-face {
+    font-family: NotAFont2s;
+    src: url('whatafont/whata2s.ttf');
 }
 
 
-html
-{
+html {
     height: 100%;
     padding: 0px;
     margin: 0px;
@@ -28,10 +37,10 @@ header {
     margin: 0;
     background-color: #044568;
     color: white;
-    font-family: Whata;
 }
 
 .topMenu {
+    font-family: NotAFont2;
     width: 12%;
     text-align: center;
     padding: 0px;
@@ -41,7 +50,6 @@ header {
 }
 
 .mainHomepage {
-
     width: 85%;
     text-align: center;
     padding: 0px;
@@ -50,7 +58,7 @@ header {
     background-color: #333;
 }
 
-.middleList{
+.middleList {
     width: 14%;
     text-align: center;
     padding: 0px;
@@ -59,7 +67,6 @@ header {
 }
 
 .bottomMenu {
-
     width: 12%;
     text-align: center;
     padding: 0px;
@@ -76,7 +83,7 @@ footer {
     width: 100%;
     background-color: #333;
     color: white;
-    font-family: 'whatafont_expandedexpanded';
+    font-family: NotAFont2i;
 }
 
 nav a:link {
@@ -92,7 +99,8 @@ nav a:visited {
     min-height: 120%;
     margin-top: 190px;
 }
-.content{
+
+.content {
     min-height: 100%;
     margin-top: 190px;
 }
@@ -192,8 +200,7 @@ th {
     visibility: hidden;
 }
 
-span 
-{
+span {
     margin-left: 650px;
 }
 
@@ -268,9 +275,8 @@ body {
     text-align: center;
 }
 
-.columns{
+.columns {
     columns: 4;
-
 }
 
 .center_image {
