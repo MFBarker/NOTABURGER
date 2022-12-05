@@ -156,11 +156,6 @@ td {
     font-size: 10px;
 }
 
-#secret {
-    text-align: center;
-    color: red;
-}
-
 .quantity {
     width: fit-content;
 }
